@@ -1,0 +1,265 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/opensans-condlight-webfont.eot");
+  src: url("../font/OpenSans-CondLight.ttf") format('truetype'),
+  url("../font/opensans-condlight-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/opensans-condlight-webfont.woff") format('woff'),
+  url("../font/opensans-condlight-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans-webfont.eot");
+  src: url("../font/openSans.ttf") format('truetype'),
+  url("../font/opensans-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/opensans-webfont.woff") format('woff'),
+  url("../font/opensans-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../font/roboto-condensed-webfont.eot");
+  src: url("../font/Roboto-Condensed.ttf") format('truetype'),
+  url("../font/roboto-condensed-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/roboto-condensed-webfont.woff") format('woff'),
+  url("../font/roboto-condensed-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/roboto-boldcondensed-webfont.eot");
+  src: url("../font/Roboto-BoldCondensed.ttf") format('truetype'),
+  url("../font/roboto-boldcondensed-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/roboto-boldcondensed-webfont.woff") format('woff'),
+  url("../font/roboto-boldcondensed-webfont.svg") format('svg');
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #bbb;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #777;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #777;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #bbb;
+}
+*{
+  margin:0;
+  padding:0;
+  max-height:9999px;
+}
+.placeholder{
+  color:#bbb;
+}
+ul{
+  list-style: none;
+}
+body{
+  background:#e3e3e3;
+}
+.clear{
+  clear: both;
+}
+input{
+  background:#fff;
+  font-family: Roboto;
+  line-height: 40px\9;
+}
+.wrapper{
+  width:1200px;
+  margin:0 auto;
+}
+.header{
+  height:200px;
+  .wrapper{
+    padding-top:40px;
+    height:220px;
+    .img{
+      width: 100px;
+      height:100px;
+      float:left;
+      img{
+        border:none;
+      }
+    }
+    .text{
+      font-family:"myfont";
+      margin-left:4px;
+      width:250px;
+      float:left;
+      font-size:24px;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      color:#2D2D2D;
+      .title{
+        padding-bottom:10px;
+        border-bottom:2px #ddbf9b solid;
+      }
+      .gateway{
+        font-size: 18px;
+        color:rgba(183,114,49,1);
+        font-family: Arial;
+        margin-top:10px;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+.top_box{
+  float: right;
+  width:530px;
+  margin-top:40px;
+  a{
+    padding:8px 20px;
+    margin-right:10px;
+    text-decoration: none;
+    color:#cfa883;
+    text-align: center;
+    line-height:30px;
+    font-family: Roboto;
+    border:1px solid #cfa883;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+  }
+  a:hover{
+    background:#cfa883;
+    color:#fff;
+  }
+}
+.container{
+  font-family: Roboto;
+  margin-top: 40px;
+  .content{
+    overflow: hidden;
+    width:900px;
+    margin:0 auto;
+    .img{
+      float: left;
+      width:45%;
+      height:450px;
+      background:url("../img/westlake4-2.jpg") -50px -20px no-repeat;
+      background:url("../img/westlakeIE4-2.jpg") no-repeat\9;
+      background-size:470px;
+
+    }
+    .login{
+      width:48%;
+      float: right;
+      h2{
+        margin-bottom:40px;
+        font-family: BoldRoboto;
+        color:#b77231;
+      }
+      form{
+        .row{
+          overflow: hidden;
+          height:42px;
+          margin-bottom:10px;
+          input[type="text"],input[type="password"]{
+             font-size: 16px;
+             text-indent: 1em;
+             width:99.4%;
+             height:40px;
+             border:1px solid #ccc;
+             -webkit-border-radius:6px;
+             -moz-border-radius:6px;
+             border-radius:6px;
+             outline:none;
+             float: left;
+           }
+        }
+
+        p{
+          text-align: right;
+          a{
+            color:#666;
+          }
+        }
+        .row{
+          margin-top:40px;
+          overflow: hidden;
+          .sign{
+            width:46%;
+            float: left;
+            color:#333;
+            height:38px;
+            background:#fff;
+            line-height:38px;
+            text-align: center;
+            text-decoration: none;
+            border:1px solid #ccc;
+          }
+          .code{
+            width:48%;
+            float: left;
+          }
+          .code_img{
+            border:1px solid #aaa;
+            height:40px;
+            width:48%;
+            float: right;
+          }
+          input[type=submit]{
+            width:46%;
+            float: right;
+            height: 40px;
+            *line-height: 30px;
+            background:#a01e08;
+            color:#fff;
+            font-size: 16px;
+            //border:1px solid #ccc;
+            border:none;
+            outline:none;
+            cursor:pointer;
+          }
+        }
+      }
+      .return_info{
+        color:red;
+      }
+    }
+  }
+}
+.footer{
+  height:50px;
+  background:#fff;
+  color:#444444;
+  line-height: 50px;
+  text-align: center;
+  margin:150px 0 30px;
+  font-family: myfont2;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+@media screen and (max-width: 1440px){
+  .wrapper{
+    width:980px;
+  }
+}
+@media screen and (max-width: 980px){
+  .footer{
+    width:980px;
+  }
+}
+
+.header .wrapper .logo{
+  overflow: hidden;
+  float: left;
+}
+.header .wrapper .logo .text{
+  height:110px;
+  overflow: hidden;
+}
+.header .wrapper .top{
+  overflow: hidden;
+  float: left;
+}
+.header .wrapper .top_box{
+  height:40px;
+  overflow: hidden;
+}
+.header .wrapper .top_box a{
+  line-height:40px;
+}
+

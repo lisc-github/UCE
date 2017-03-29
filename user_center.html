@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UCE User Center | www.uschinaedu.org</title>
+    <meta name="Keywords" content="China,EDU,Zhejiang,Jiangsu,Chongqing,Hebei,Sichuan,Shanxi,Beijing,Shandong,Shanghai" />
+    <meta property="og:title" content="www.uschinaedu.org">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.uschinaedu.org">
+    <meta property="og:site_name" content="www.uschinaedu.org">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" media="screen" />
+    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="css/user_center.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 800px)" href="css/user_center_mobile.css" />
+    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="css/newForm.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 800px)" href="css/newForm_mobile.css" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/uce.js"></script>
+    <script src="js/user_center.js"></script>
+    <script src="js/form_check2.js"></script>
+    <script src="js/password_check.js"></script>
+    <script src="js/email_check.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/sign_up.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/respond.js"></script>
+    <link rel="stylesheet" href="css/user_center.css">
+    <link rel="stylesheet" href="css/newForm.css">
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="wrapper">
+        <div class="img">
+            <a href="http://www.uschinaedu.org"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="text">
+            <p class="title">US-China Education & Culture Exchange Center</p>
+            <p class="gateway">Gateway to China</p>
+        </div>
+    </div>
+</div>
+<div class="mobile_top" style="display:none">
+    <a href="javascript:;" class="mobile_user_nav"></a>
+    <a href="javascript:;" class="mobile_user_name">My UCE</a>
+</div>
+<div class="shell">
+    <div class="user">
+        <div class="head">
+            <span id="username">changed username</span>
+        </div>
+        <a href="javascript:;" class="active">Application Form</a>
+        <a href="javascript:;">My Application</a>
+        <a href="javascript:;">Account Security</a>
+        <a href="login.html" class="exit">Exit</a>
+    </div>
+    <div class="con_box">
+        <div class="temp each_con">
+            <form action="" method="post" id="application">
+                <h2 class="title">APPLY FOR A UCE PROGRAM</h2>
+                <div class="type">
+                    <h3>SELECT A PROGRAM AND TERM</h3>
+                    <!--<div class="paper"></div>-->
+                    <div class="right">
+                        <label for="type_of_program"><b class="red_star">*</b>Please choose a type of program.</label>
+                        <input type="text" name="type_of_program" class="must" id="type_of_program" readonly="readonly">
+                        <div class="clear"></div>
+                        <div class="choose_type">
+                            <p>Teach English</p>
+                            <p>Experienced Teachers/Professional</p>
+                            <p>TESL Summer Camp</p>
+                            <p>Study in China</p>
+                            <p>Sabbatical in China</p>
+                            <p>Joint Research Program</p>
+                        </div>
+                        <div class="option">
+                            <div class="each_option">
+                                <label for="teach_term1"><input type="radio" name="term" id="teach_term1">Spring 1 Semester 2017</label>
+                                <label for="teach_term2"><input type="radio" name="term" id="teach_term2">Spring 2 Semesters 2017</label>
+                                <label for="teach_term3"><input type="radio" name="term" id="teach_term3">Fall 1 Semester 2017</label>
+                                <label for="teach_term4"><input type="radio" name="term" id="teach_term4">Fall 2 Semesters 2017</label>
+                                <label for="teach_term5"><input type="radio" name="term" id="teach_term5">TESL Summer 2017 + Fall 1 Semester 2017</label>
+                                <label for="teach_term6"><input type="radio" name="term" id="teach_term6">TESL Summer 2017 + Fall 2 Semesters 2017</label>
+                            </div>
+                            <div class="each_option">
+                                <label for="experience_term1"><input type="radio" name="term" id="experience_term1">Spring 1 Semester 2017</label>
+                                <label for="experience_term2"><input type="radio" name="term" id="experience_term2">Spring 2 Semesters 2017</label>
+                                <label for="experience_term3"><input type="radio" name="term" id="experience_term3">Fall 1 Semester 2017</label>
+                                <label for="experience_term4"><input type="radio" name="term" id="experience_term4">Fall 2 Semesters 2017</label>
+                            </div>
+                            <div class="each_option">
+                                <label for="camp_term1"><input type="radio" name="term" id="camp_term1">4 Weeks July 2017</label>
+                                <label for="camp_term2"><input type="radio" name="term" id="camp_term2">5 Weeks July 2017</label>
+                                <label for="camp_term3"><input type="radio" name="term" id="camp_term3">7 Weeks July 2017</label>
+                                <label for="camp_term4"><input type="radio" name="term" id="camp_term4">8 Weeks July 2017</label>
+                                <label for="camp_term5"><input type="radio" name="term" id="camp_term5">12 Weeks May – August 2017</label>
+                            </div>
+                            <div class="each_option">
+                                <label for="study_term1"><input type="radio" name="term" id="study_term1">Degree Program</label>
+                                <label for="study_term2"><input type="radio" name="term" id="study_term2">Short-Term / Non-Degree Program</label>
+                            </div>
+                            <div class="each_option">
+                                <label for="sabbatical_term_term1"><input type="radio" name="term" id="sabbatical_term_term1">ENTER YOUR HOME INSTITUTION</label>
+                                <label for="sabbatical_term"><input type="text" name="term" id="sabbatical_term"></label>
+                            </div>
+                            <div class="each_option">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Study in china, teach in China, tesl, tefl, teach abroad, sabbatical abroad, learn Chinese, Chinese culture, Chinese universities, Chinese schools, teach English, English summer camp, internship in china-->
+                <div class="info">
+                    <h3>Please mark N/A if the information is not applicable.</h3>
+                    <div class="box no_border">
+                        <a href="javascript:;" class="list">1. Biological<span><img src="img/arrow_down.png"></span></a>
+                        <div class="biological content">
+                            <i>(Please type your name exactly as shown on your passport or driver’s license)</i>
+                            <div class="row">
+                                <div class="name">
+                                    <label for="f_name"><b class="red_star">*</b>First Name</label>
+                                    <input type="text" id="f_name" name="f_name" class="list_must">
+                                </div>
+                                <div class="name">
+                                    <label for="m_name">Middle Name</label>
+                                    <input type="text" id="m_name" name="m_name">
+                                </div>
+                                <div class="name">
+                                    <label for="l_name"><b class="red_star">*</b>Last Name</label>
+                                    <input type="text" id="l_name" name="l_name" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="birthday_gender birthday">
+                                    <label for="birthday"><b class="red_star">*</b>Date of Birth</label>
+                                    <input type="text" id="birthday" name="birthday" placeholder="MM/DD/YYYY" class="list_must date_format">
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="birthday_gender gender">
+                                    <label for="gender"><b class="red_star">*</b>Gender</label>
+                                    <input type="text" id="gender" name="gender" class="list_must" readonly="readonly">
+                                    <div class="gender_option">
+                                        <p>Male</p>
+                                        <p>Female</p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="birth">
+                                    <label for="birth_country"><b class="red_star">*</b>Country of Birth</label>
+                                    <input type="text" id="birth_country" name="birth_country" class="list_must">
+                                </div>
+                                <div class="birth">
+                                    <label for="birth_state"><b class="red_star">*</b>State of Birth</label>
+                                    <input type="text" id="birth_state" name="birth_state" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="ethnicity_citizen ethnicity">
+                                    <label for="ethnicity"><b class="red_star">*</b>Ethnicity</label>
+                                    <input type="text" id="ethnicity" name="ethnicity" class="list_must" readonly="readonly">
+                                    <div class="clear"></div>
+                                    <div class="ethnicity_option">
+                                        <p>Decline To Answer</p>
+                                        <p>Asian or Pacific Islander</p>
+                                        <p>Black or African American</p>
+                                        <p>Hispanic or Latino (a)</p>
+                                        <p>Multiracial</p>
+                                        <p>Native American/Alaska Native</p>
+                                        <p>White</p>
+                                    </div>
+                                </div>
+                                <div class="ethnicity_citizen">
+                                    <label for="country_of_citizenship"><b class="red_star">*</b>Country of Citizenship</label>
+                                    <input type="text" id="country_of_citizenship" name="country_of_citizenship" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <i>Home/Permanent Address</i>
+                            <div class="row">
+                                <div class="street">
+                                    <label for="home_street"><b class="red_star">*</b>Street Address</label>
+                                    <input type="text" id="home_street" name="home_street" class="list_must">
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="home_address">
+                                    <label for="home_city"><b class="red_star">*</b>City</label>
+                                    <input type="text" id="home_city" name="home_city" class="list_must">
+                                </div>
+                                <div class="home_address">
+                                    <label for="home_state"><b class="red_star">*</b>State</label>
+                                    <input type="text" id="home_state" name="home_state" class="list_must">
+                                </div>
+                                <div class="home_address">
+                                    <label for="home_zip_code"><b class="red_star">*</b>Zip Code</label>
+                                    <input type="text" id="home_zip_code" name="home_zip_code" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <i>Mailing Address (Please do not use PO Box address)</i>
+                            <div class="row">
+                                <div class="street">
+                                    <label for="mailing_street"><b class="red_star">*</b>Street Address</label>
+                                    <input type="text" id="mailing_street" name="mailing_street" class="list_must">
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mailing_address">
+                                    <label for="mailing_city"><b class="red_star">*</b>City</label>
+                                    <input type="text" id="mailing_city" name="mailing_city" class="list_must">
+                                </div>
+                                <div class="mailing_address">
+                                    <label for="mailing_state"><b class="red_star">*</b>State</label>
+                                    <input type="text" id="mailing_state" name="mailing_state" class="list_must">
+                                </div>
+                                <div class="mailing_address">
+                                    <label for="mailing_zip_code"><b class="red_star">*</b>Zip Code</label>
+                                    <input type="text" id="mailing_zip_code" name="home_zip_code" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <p>&nbsp;</p>
+                            <div class="row">
+                                <div class="e-mail">
+                                    <label for="e-mail_address"><b class="red_star">*</b>E-mail Address</label>
+                                    <input type="text" id="e-mail_address" name="e-mail_address" class="list_must">
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="number">
+                                    <label for="phone_number"><b class="red_star">*</b>Phone Number</label>
+                                    <input type="text" id="phone_number" name="phone_number" class="list_must phone_format" placeholder="(Area Code)–XXX-XXXX">
+                                </div>
+                                <div class="number">
+                                    <label for="cell_number"><b class="red_star">*</b>Cell Number</label>
+                                    <input type="text" id="cell_number" name="cell_number" class="list_must phone_format" placeholder="(Area Code)–XXX-XXXX">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!--Study in china, teach in China, tesl, tefl, teach abroad, sabbatical abroad, learn Chinese, Chinese culture, Chinese universities, Chinese schools, teach English, English summer camp, internship in china-->
+                            <i>Emergency Contact</i>
+                            <div class="row">
+                                <div class="emergency">
+                                    <label for="emergency_name"><b class="red_star">*</b>Name</label>
+                                    <input type="text" name="emergency_name" id="emergency_name" class="list_must">
+                                </div>
+                                <div class="emergency">
+                                    <label for="relationship"><b class="red_star">*</b>Relationship</label>
+                                    <input type="text" name="relationship" id="relationship" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="emergency_contact">
+                                    <label for="emergency_e-mail"><b class="red_star">*</b>E-mail</label>
+                                    <input type="text" name="emergency_e-mail" id="emergency_e-mail" class="list_must">
+                                </div>
+                                <div class="emergency_contact">
+                                    <label for="emergency_phone"><b class="red_star">*</b>Phone</label>
+                                    <input type="text" name="emergency_phone" id="emergency_phone phone_format" placeholder="(Area Code)–XXX-XXXX" class="list_must phone_format">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box no_border">
+                        <a href="javascript:;" class="list">2. Background<span><img src="img/arrow_down.png"></span></a>
+                        <div class="background content">
+                            <span><b class="red_star">*</b>Do you hold any education degrees or teaching certifications?</span>
+                            <div class="degree_certification">
+                                <label for="degree_yes" class="degree degree1">YES
+                                    <input type="radio" name="degree_certification" value="yes" id="degree_yes" checked>
+                                    <i></i>
+                                </label>
+                                <label for="degree_no" class="certification certification1">NO
+                                    <input type="radio" name="degree_certification" value="no" id="degree_no">
+                                    <i></i>
+                                </label>
+                                <div class="clear"></div>
+                                <textarea name="any_degree" id="any_degree" class="list_must"></textarea>
+                            </div>
+                            <span><b class="red_star">*</b>Are you certified to teach English as a Second/Foreign Language (TESL/TEFL)?</span>
+                            <div class="degree_certification">
+                                <label for="certify_yes" class="degree degree2 ">YES
+                                    <input type="radio" name="teach_certify" value="yes" id="certify_yes" checked>
+                                     <i></i>
+                                </label>
+                                <label for="certify_no" class="certification certification2">NO
+                                    <input type="radio" name="teach_certify" value="no" id="certify_no">
+                                    <i></i>
+                                </label>
+                                <div class="clear"></div>
+                                <textarea name="any_degree" id="any_certify" class="list_must"></textarea>
+                            </div>
+                            <i><b class="red_star">*</b>Current Occupation</i>
+                            <div class="current_occupation">
+                                <label for="teacher" class="occupation occupation1">Teacher
+                                    <input type="radio" name="current_occupation" value="teacher" id="teacher" checked>
+                                    <i></i>
+                                </label>
+                                <label for="student" class="occupation occupation2">Student
+                                    <input type="radio" name="current_occupation" value="student" id="student">
+                                    <i></i>
+                                </label>
+                                <label for="other" class="occupation occupation3">Other
+                                    <input type="radio" name="current_occupation" value="other" id="other" checked>
+                                    <i></i>
+                                </label>
+                                <label for="other_con"></label>
+                                <input type="text" name="other_con" id="other_con" class="list_must">
+                            </div>
+                            <div class="row">
+                                <div class="employer">
+                                    <label for="employer_name"><b class="red_star">*</b>Employer's Name</label>
+                                    <input type="text" name="employer_name" id="employer_name" class="list_must">
+                                </div>
+                                <div class="employer">
+                                    <label for="employer_phone"><b class="red_star">*</b>Phone</label>
+                                    <input type="text" name="employer_phone" id="employer_phone" class="phone_format list_must" placeholder="(Area Code)–XXX-XXXX">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="row">
+                                <div class="institution">
+                                    <label for="institution_name"><b class="red_star">*</b>Institution's Name</label>
+                                    <input type="text" name="institution_name" id="institution_name" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <span class="did"><b class="red_star">*</b>Did you graduate from this institution?</span>
+                            <div class="graduate_from">
+                                <label for="graduate_yes" class="graduate graduate1">YES
+                                    <input type="radio" name="graduate_from" value="yes" id="graduate_yes" checked>
+                                    <i></i>
+                                </label>
+                                <label for="graduate_no" class="graduate">NO
+                                    <input type="radio" name="graduate_from" value="no" id="graduate_no">
+                                    <i>
+
+                                    </i>
+                                </label>
+                                <div class="clear"></div>
+                            </div>
+                            <!--Study in china, teach in China, tesl, tefl, teach abroad, sabbatical abroad, learn Chinese, Chinese culture, Chinese universities, Chinese schools, teach English, English summer camp, internship in china-->
+                            <div class="institution_con">
+                                <div class="boxes">
+                                    <div class="yes_con">
+                                        <div>
+                                            <label for="attended_date_start"><b class="red_star">*</b>Dates Attended</label>
+                                            <div class="left_box">
+                                                <input type="text" name="attended_date_start" class="date_format list_must" id="attended_date_start" placeholder="MM/DD/YYYY">
+                                            </div>
+                                            <span>-</span>
+                                            <div class="right_box">
+                                                <input type="text" name="attended_date" class="date_format list_must" id="attended_date_end" placeholder="MM/DD/YYYY">
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <div class="type_of_degree">
+                                            <div>
+                                                <label for="type_of_degree"><b class="red_star">*</b>Type of Degree or Classification</label>
+                                                <input type="text" name="type_of_degree" id="type_of_degree" readonly="readonly" class="list_must">
+                                                <div class="clear"></div>
+                                            </div>
+                                            <div class="degree_con">
+                                                <p>Associate of Arts (AA)</p>
+                                                <p>Associate of Arts in Teaching (AAT)</p>
+                                                <p>Associate of Engineering Science (AES)</p>
+                                                <p>Associate of Fine Arts (AFA)</p>
+                                                <p>Associate of Science (AS)</p>
+                                                <p>Associate of Applied Science (AAS)</p>
+                                                <p>Bachelor of Arts (BA)</p>
+                                                <p>Bachelor of Fine Arts (BFA)</p>
+                                                <p>Bachelor of Business Administration (BBA)</p>
+                                                <p>Bachelor of Science (BS)</p>
+                                                <p>Master of Arts (MA)</p>
+                                                <p>Master of Science (MS)</p>
+                                                <p>Master of Education (M.Ed.)</p>
+                                                <p>Master of Business Administration (MBA)</p>
+                                                <p>Professional Doctorate</p>
+                                                <p>Research Doctorate</p>
+                                            </div>
+                                        </div>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <div>
+                                            <label for="yes_major"><b class="red_star">*</b>Major of Specialization</label>
+                                            <input type="text" name="major" id="yes_major" class="list_must">
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="no_con">
+                                        <div>
+                                            <label for="anticipated_date"><b class="red_star">*</b>Anticipated Date of Graduation (If any)</label>
+                                            <div class="anticipated_date_box">
+                                                <input type="text" name="anticipated_date" id="anticipated_date" class="date_format" placeholder="MM/DD/YYYY">
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="not_play" id="not_play"><span class="color">I do not play to graduate</span>
+                                            <div class="clear"></div>
+                                        </div>
+
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <div>
+                                            <label for="years_completed"><b class="red_star">*</b>Years Completed by Time of Departure</label>
+                                            <input type="text" name="years_completed" id="years_completed">
+                                            <div class="clear"></div>
+                                        </div>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <div class="type_of_degree"><div>
+                                            <label for="no_type_of_degree"><b class="red_star">*</b>Type of Degree or Classification</label>
+                                            <input type="text" name="no_type_of_degree" id="no_type_of_degree" readonly="readonly">
+                                            <div class="clear"></div>
+                                        </div>
+                                            <div class="no_degree_con">
+                                                <p>Associate of Arts (AA)</p>
+                                                <p>Associate of Arts in Teaching (AAT)</p>
+                                                <p>Associate of Engineering Science (AES)</p>
+                                                <p>Associate of Fine Arts (AFA)</p>
+                                                <p>Associate of Science (AS)</p>
+                                                <p>Associate of Applied Science (AAS)</p>
+                                                <p>Bachelor of Arts (BA)</p>
+                                                <p>Bachelor of Fine Arts (BFA)</p>
+                                                <p>Bachelor of Business Administration (BBA)</p>
+                                                <p>Bachelor of Science (BS)</p>
+                                                <p>Master of Arts (MA)</p>
+                                                <p>Master of Science (MS)</p>
+                                                <p>Master of Education (M.Ed.)</p>
+                                                <p>Master of Business Administration (MBA)</p>
+                                                <p>Professional Doctorate</p>
+                                                <p>Research Doctorate</p>
+                                            </div>
+                                        </div>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <div>
+                                            <label for="no_major"><b class="red_star">*</b>Major of Specialization</label>
+                                            <input type="text" name="no_major" id="no_major">
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box no_border">
+                        <a href="javascript:;" class="list">3. Passport Information<span><img src="img/arrow_down.png"></span></a>
+                        <div class="passport content">
+                            <h4>1.Passport Color Scan</h4>
+                            <p>Please upload a color scan of the first two pages of your passport (the page with your face and also the page with your signature).</p>
+                            <div class="upload_box">
+                                <a href="javascript:;" class="upload"><span>UPLOAD A DOCUMENT</span></a>
+                                <input type="file" multiple>
+                                <span class="upload_file"></span>
+                            </div>
+                            <h4>2.Passport Data</h4>
+                            <div class="row">
+                                <label for="passport_date"><b class="red_star">*</b>Passport Expiry Date</label>
+                                <input type="text" name="passport_date" id="passport_date" placeholder="MM/DD/YYYY" class="list_must date_format">
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <label for="passport_number"><b class="red_star">*</b>Passport Number</label>
+                                <input type="text" name="passport_number" id="passport_number" class="list_must">
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <label for="passport_issue_date"><b class="red_star">*</b>Passport Issue Date</label>
+                                <input type="text" name="passport_issue_date" id="passport_issue_date" placeholder="MM/DD/YYYY" class="list_must date_format">
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="country">
+                                    <label for="issuing_country"><b class="red_star">*</b>Issuing Country</label>
+                                    <input type="text" name="issuing_country" id="issuing_country" class="list_must">
+                                </div>
+                                <div class="city">
+                                    <label for="issuing_city"><b class="red_star">*</b>Issuing City</label>
+                                    <input type="text" name="issuing_city" id="issuing_city" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Study in china, teach in China, tesl, tefl, teach abroad, sabbatical abroad, learn Chinese, Chinese culture, Chinese universities, Chinese schools, teach English, English summer camp, internship in china-->
+
+                    <div class="box no_border">
+                        <a href="javascript:;" class="list">4. Teach in China Placement Preferences<span><img src="img/arrow_down.png"></span></a>
+                        <div class="placement content">
+                            <p>UCE uses the answers to the following questions as a reference point in securing participants' teaching placements.
+                                Though UCE will try … <span class="more_btn">[more]</span></p>
+
+                            <div class="row">
+                                <label for="friend_name">Are you traveling with a friend or partner? Please enter the name(s) here:</label>
+                                <input type="text" name="friend_name" id="friend_name">
+                            </div>
+                            <div class="row">
+                                <label for="be_placed">I would rather be placed near</label>
+                                <input type="text" name="be_placed" id="be_placed"><br/>
+                                <span style="clear:both;width:100%;display: block;">(please name a city or region you know or put No Preference)</span>
+                            </div>
+                            <div class="row">
+                                <div class="choice_box" style="z-index:30\9">
+                                    <label for="first_choice"><b class="red_star">*</b>Please choose your first choice of institution level:</label>
+                                    <input type="text" name="first_choice" id="first_choice" class="list_must" readonly="readonly">
+                                    <div class="clear"></div>
+                                    <div class="first_choice">
+                                        <p>Kindergarten/Elementary</p>
+                                        <p>Junior High/High School</p>
+                                        <p>University</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="choice_box" style="z-index:29\9">
+                                    <label for="second_choice">Please choose your second choice of institution level:</label>
+                                    <input type="text" name="second_choice" id="second_choice" readonly="readonly">
+                                    <div class="clear"></div>
+                                    <div class="second_choice">
+                                        <p>Kindergarten/Elementary</p>
+                                        <p>Junior High/High School</p>
+                                        <p>University</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="choice_box" style="z-index:28\9">
+                                    <label for="third_choice">Please choose your third choice of institution level:</label>
+                                    <input type="text" name="third_choice" id="third_choice" readonly="readonly">
+                                    <div class="clear"></div>
+                                    <div class="third_choice">
+                                        <p>Kindergarten/Elementary</p>
+                                        <p>Junior High/High School</p>
+                                        <p>University</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="other_considerations">Other considerations UCE should make in assigning your teaching location (for medical, personal, or other important reasons) should be briefly described below.</label>
+                                <textarea name="other_considerations" id="other_considerations"></textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="javascript:;" class="list">5. References / Recommendations<span><img src="img/arrow_down.png"></span></a>
+                        <div class="reference content">
+                            <i>(Please provide two persons who know you well. At least one of them must be your professor or advisor if you are a student. If you are not a student, at least one of them should be your director or supervisor. Please do NOT use commas or any other punctuation.)</i>
+                            <br/>
+                            <b>A:</b>
+                            <div class="row">
+                                <div class="address_phone">
+                                    <label for="A_address"><b class="red_star">*</b>E-Mail Address</label>
+                                    <input type="text" name="A_address" id="A_address" class="list_must">
+                                </div>
+                                <div class="address_phone">
+                                    <label for="A_phone"><b class="red_star">*</b>Daytime Phone Number</label>
+                                    <input type="text" name="A_phone" id="A_phone" class="phone_format list_must" placeholder="(Area Code)–XXX-XXXX" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="prefix_name">
+                                    <label for="A_prefix"><b class="red_star">*</b>Salutation/Prefix</label>
+                                    <input type="text" name="A_prefix" id="A_prefix" class="list_must" readonly="readonly">
+                                    <div class="a_prefix_con">
+                                        <p>Mr.</p>
+                                        <p>Ms.</p>
+                                        <p>Mrs.</p>
+                                        <p>Dr.</p>
+                                        <p>Prof.</p>
+                                        <p>Other</p>
+                                    </div>
+                                </div>
+                                <div class="prefix_name">
+                                    <label for="A_f_name"><b class="red_star">*</b>First Name</label>
+                                    <input type="text" name="A_f_name" id="A_f_name" class="list_must">
+                                </div>
+                                <div class="prefix_name">
+                                    <label for="A_l_name"><b class="red_star">*</b>Last Name</label>
+                                    <input type="text" name="A_l_name" id="A_l_name" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+
+                            </div>
+                            <div class="row">
+                                <div class="organization_position">
+                                    <label for="A_organization"><b class="red_star">*</b>Organization</label>
+                                    <input type="text" name="A_organization" id="A_organization" class="list_must">
+                                </div>
+                                <div class="organization_position">
+                                    <label for="A_position"><b class="red_star">*</b>Position</label>
+                                    <input type="text" name="A_position" id="A_position" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+
+                            </div>
+                            <p>&nbsp;</p>
+                            <b>B:</b>
+                            <div class="row">
+                                <div class="address_phone">
+                                    <label for="B_address"><b class="red_star">*</b>E-Mail Address</label>
+                                    <input type="text" name="B_address" id="B_address" class="list_must">
+                                </div>
+                                <div class="address_phone">
+                                    <label for="B_phone"><b class="red_star">*</b>Daytime Phone Number</label>
+                                    <input type="text" name="B_phone" id="B_phone" class="phone_format list_must" placeholder="(Area Code)–XXX-XXXX" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+
+                            </div>
+                            <div class="row">
+                                <div class="prefix_name">
+                                    <label for="B_prefix"><b class="red_star">*</b>Salutation/Prefix</label>
+                                    <input type="text" name="B_prefix" id="B_prefix" class="list_must" readonly="readonly">
+                                    <div class="b_prefix_con">
+                                        <p>Mr.</p>
+                                        <p>Ms.</p>
+                                        <p>Mrs.</p>
+                                        <p>Dr.</p>
+                                        <p>Prof.</p>
+                                        <p>Other</p>
+                                    </div>
+                                </div>
+                                <div class="prefix_name">
+                                    <label for="B_f_name"><b class="red_star">*</b>First Name</label>
+                                    <input type="text" name="B_f_name" id="B_f_name" class="list_must">
+                                </div>
+                                <div class="prefix_name">
+                                    <label for="B_l_name"><b class="red_star">*</b>Last Name</label>
+                                    <input type="text" name="B_l_name" id="B_l_name" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+
+                            </div>
+                            <div class="row">
+                                <div class="organization_position">
+                                    <label for="B_organization"><b class="red_star">*</b>Organization</label>
+                                    <input type="text" name="B_organization" id="B_organization" class="list_must">
+                                </div>
+                                <div class="organization_position">
+                                    <label for="B_position"><b class="red_star">*</b>Position</label>
+                                    <input type="text" name="B_position" id="B_position" class="list_must">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <span class="notice">For some programs, recommendation letters may be needed. Please send them directly to UCE Office upon request.</span>
+                        </div>
+                        <div class="more_cover">
+                            <div class="more">
+                                <h2>Task Instructions</h2>
+                                <div class="more_content">
+                                    <p>UCE uses the answers to the following questions as a reference point in securing participants' teaching placements.</p>
+                                    <p>&nbsp;</p>
+                                    <p>Though UCE will try its best to match participants with their preferred locations, UCE cannot guarantee that all/any preferences will be met. Schools abroad direct the placement process by making hiring decisions based on their needs, availability and preferences. This is not a guarantee that your preferences will be met; as with any kind of living, traveling, or working abroad, flexibility in your placement preferences will be an important tool to your success.</p>
+                                </div>
+                                <a href="javascript:;" class="close_btn">close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="save_submit">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                    <a href="javascript:;">Save</a>
+                </div>
+            </form>
+            <span class="return_info"></span>
+        </div>
+        <div class="my_application each_con">
+            <h2>My Application</h2>
+            <p class="title">Application Record</p>
+            <div class="record">
+                <p class="none">You have not yet applied for any programs</p>
+            </div>
+            <p class="title">Application Status</p>
+            <div class="status">
+                <p class="none">You have not yet applied for any programs</p>
+            </div>
+        </div>
+        <div class="security each_con">
+            <h2>Account security</h2>
+            <a href="javascript:;" class="change_info">Change Password</a>
+            <div class="password change_con">
+                <form action="" id="change_password">
+                    <div class="box">
+                        <label for="current_password">Current Password</label>
+                        <input type="password" name="current_password" class="must" id="current_password">
+                    </div>
+                    <div class="box">
+                        <label for="new_password">New Password</label>
+                        <input type="password" name="new_password" class="must" id="new_password">
+                    </div>
+                    <div class="box">
+                        <input type="submit" value="Confirm">
+                    </div>
+                </form>
+                <span class="return_info"></span>
+            </div>
+            <a href="javascript:;" class="change_info">Change Email Address</a>
+            <div class="Email change_con">
+                <form action="" id="change_email">
+                    <div class="box">
+                        <label for="new_email">New Email Address</label>
+                        <input type="text" name="new_email" id="new_email" class="must">
+                    </div>
+                    <div class="box">
+                        <label for="Verification_Code">Verification Code</label>
+                        <div class="right">
+                            <div class="code">
+                                <input type="text" name="Verification_Code" class="must" id="Verification_Code" placeholder="Verification Code">
+                            </div>
+                            <div class="get_code">
+                                <input type="button" value="Get Verification Code" id="get_code1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <input type="submit" value="Confirm">
+                    </div>
+                </form>
+                <span class="return_info1"></span>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="footer">
+    <div class="wrapper">
+        <p>© 2016 by US-China Education and Culture Exchange Center</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,eAAI;EACF,OAAO,EAAC,IAAI;EACZ,MAAM,EAAC,IAAI;EACX,KAAK,EAAC,KAAK;EACX,MAAM,EAAC,UAAU;EACjB,iBAAC;IACC,WAAW,EAAE,MAAM;IACnB,SAAS,EAAE,IAAI;IACf,KAAK,EAAC,IAAI",
+"sources": ["research_mobile.scss"],
+"names": [],
+"file": "research_mobile.css"
+}

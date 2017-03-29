@@ -1,0 +1,99 @@
+.container {
+  font-family: "Roboto";
+  color: #666;
+  padding: 0 10px; }
+  .container .con {
+    display: none; }
+    .container .con .title {
+      width: 1080px;
+      margin: 40px auto 20px;
+      font-size: 16px; }
+  .container .con_home {
+    overflow: hidden;
+    margin: 20px auto; }
+    .container .con_home .homes {
+      width: 47.4%;
+      *width: 21.869%;
+      padding: 0.8%;
+      float: left;
+      margin: 0 2% 20px 0;
+      background: #fff; }
+      .container .con_home .homes .view1 {
+        margin-bottom: 6px; }
+      .container .con_home .homes .view2 {
+        margin-top: 6px; }
+      .container .con_home .homes .view {
+        height: 262px;
+        background: #cc9553;
+        color: #f1f1f1;
+        padding: 16px 11px; }
+        .container .con_home .homes .view h4 {
+          font-family: BoldRoboto;
+          font-size: 35px;
+          margin-bottom: 6px;
+          font-weight: normal;
+          font-size: 16px \9 ;
+          font-weight: bold \9 ; }
+        .container .con_home .homes .view p {
+          font-size: 28px;
+          line-height: 37px; }
+      .container .con_home .homes .img {
+        position: relative; }
+        .container .con_home .homes .img img {
+          width: 100%;
+          display: block; }
+        .container .con_home .homes .img .border {
+          width: 95%;
+          height: 97%;
+          border: 2px solid #e3e3e3;
+          position: absolute;
+          top: 1.0%;
+          left: 2%; }
+        .container .con_home .homes .img .square {
+          width: 40px;
+          height: 40px;
+          background: url("../img/square.png");
+          position: absolute; }
+        .container .con_home .homes .img .square1 {
+          top: -13px;
+          left: 12px; }
+        .container .con_home .homes .img .square2 {
+          bottom: -15px;
+          right: 12px; }
+    .container .con_home .home_2 {
+      margin-right: 0; }
+    .container .con_home .clear {
+      clear: both; }
+    .container .con_home .introduce {
+      clear: both;
+      margin: 20px 0 20px;
+      background: #fff;
+      padding: 0.8%;
+      overflow: hidden; }
+      .container .con_home .introduce .left {
+        height: 450px;
+        background: url("../photo_gallery/50.jpg") -7px -56px no-repeat;
+        background-size: 118%;
+        position: relative; }
+        .container .con_home .introduce .left span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -23px;
+          margin-top: -24px;
+          text-align: center; }
+      .container .con_home .introduce .right {
+        position: relative; }
+        .container .con_home .introduce .right .text {
+          background: #e3e3e3;
+          height: 676px;
+          padding: 15px 18px;
+          overflow: hidden; }
+          .container .con_home .introduce .right .text p {
+            margin-bottom: 10px;
+            line-height: 44px;
+            font-size: 34px; }
+    .container .con_home .home_4 {
+      margin-right: 0; }
+
+/*# sourceMappingURL=uce_home_mobile.css.map */

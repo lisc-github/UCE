@@ -1,0 +1,368 @@
+
+.choose{
+  background:#ccc !important;
+  color:#fff !important;
+}
+.container{
+  font-family: Roboto;
+  color:#666;
+  h1,h2,h3{
+    font-family:BoldRoboto;
+  }
+  .con{
+    display:none;
+    .banner{
+      height:1200px;
+      padding-top:1px;
+      position:relative;
+      background:url("../img/westlake3.jpg") 0 -80px no-repeat;
+      background-size:360%;
+      .text{
+        margin:40px auto;
+        padding:0 20px;
+        h1{
+          color:#fff;
+          font-weight: bold;
+          text-align: center;
+          font-size: 40px;
+        }
+        p{
+          color:#fff;
+          font-size: 34px;
+        }
+      }
+      .pos_nav{
+        z-index: 10;
+        overflow: hidden;
+        position:absolute;
+        left:50%;
+        margin-left:-451px;
+        bottom:-25px;
+        box-shadow: #ccc 0 0 22px;
+        a{
+          font-family: BoldRoboto;
+          font-size: 24px;
+          float: left;
+          height:50px;
+          background:#fff;
+          line-height: 50px;
+          border-right:1px solid #ccc;
+          padding:0 19px ;
+          text-decoration: none;
+          text-align: center;
+          color:#666;
+        }
+        a:hover{
+          background:rgb(207,168,131);
+          color:#fff;
+        }
+        .apply{
+          background:#caca17;
+          color:#fff;
+        }
+        .apply:hover{
+          background:#caca17;
+        }
+      }
+    }
+    .main{
+      width:100%;
+      overflow: hidden;
+      .boxes{
+        overflow: hidden;
+        width:400%;
+        .teaching_English,.position,.sabbatical,.apply{
+          padding:0 20px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          float: left;
+          width:25%;
+          h1{
+            margin:60px auto 30px;
+            color:#b77231;
+            font-size: 40px;
+          }
+          .box{
+            margin:0 auto 40px;
+            overflow:hidden;
+            .img{
+              height:386px;
+              overflow: hidden;
+              background:url("../img/work_pic1.jpg") -15px -50px no-repeat;
+              background-size:110%;
+
+              img{
+                width:124%;
+                display:none;
+              }
+            }
+            .detail{
+              font-size: 34px;
+              margin-top:16px;
+              line-height: 40px;
+            }
+            .img2{
+              height:386px;
+              overflow: hidden;
+              background:url("../img/work_pic2.jpg") -84px -170px no-repeat;
+              background-size:110%;
+              img{
+                width:124%;
+                display: none;
+              }
+            }
+            .detail2{
+              font-size: 34px;
+              margin-top:16px;
+              line-height: 40px;
+            }
+          }
+          .warning{
+            margin:0 auto;
+            font-size: 26px;
+            font-style: italic;
+          }
+          .guide{
+            font-size: 26px;
+            margin:20px auto;
+            color:red;
+          }
+          .tab{
+            margin:0 auto 60px;
+            table{
+              border-collapse:collapse;
+              width:100%;
+            }
+
+          }
+          .process{
+            margin-top:60px;
+            .box{
+              margin:0 auto;
+              overflow: hidden;
+              h3{
+                margin-bottom:12px;
+                font-size: 40px;
+              }
+              p{
+                line-height: 42px;
+                font-size: 30px;
+              }
+              .decoration{
+                text-decoration: underline;
+              }
+              ul{
+                margin-left:30px;
+                li{
+                  line-height: 30px;
+                  height:36px;
+                  font-size: 26px;
+                  span{
+                    font-family: BoldRoboto;
+                    display: inline-block;
+                    margin-right:10px;
+                    font-size: 30px;
+                    height:30px;
+                    line-height: 26px;
+                    vertical-align: top;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+
+        .teaching_English,.position,.sabbatical{
+          .border{
+            height:100%;
+            border-right:1px solid #ccc;
+          }
+          .box{
+            p{
+              font-size:34px;
+            }
+          }
+          .tab{
+            margin:0 auto;
+            background:#fff;
+            overflow: hidden;
+            h2{
+              margin:0 0 10px 0;
+              background:#aaa;
+              color:#fff;
+              line-height: 40px;
+              padding:10px;
+              text-align: center;
+            }
+            p,h3{
+              font-size: 28px;
+              padding:0 22px;
+            }
+            p{
+              line-height: 46px;
+              span{
+                //font-size: 24px;
+                margin-right:10px;
+                //font-family: BoldRoboto;
+                font-size: 24px;
+              }
+            }
+            h3{
+              line-height: 30px;
+              font-family: BoldRoboto;
+            }
+            .country{
+              float: left;
+              width:16%;
+              text-align: center;
+
+            }
+            .type{
+              float: left;
+              width:25%;
+
+            }
+            .length{
+              float: left;
+              width:25%;
+
+            }
+            .category{
+              float: left;
+              width:34%;
+
+            }
+          }
+          .tab2{
+            margin:30px auto 0;
+            background:#fff;
+            overflow: hidden;
+            h2{
+              margin:0 0 10px 0;
+              //background:#00c1de;
+              background:#aaa;
+              color:#fff;
+              line-height: 40px;
+            }
+            .salary{
+              float: left;
+              width:36%;
+            }
+            .fee{
+              float: left;
+              width:28%;
+
+            }
+            .qualifications{
+              float: left;
+              width:36%;
+
+            }
+
+          }
+
+        }
+        .position,.sabbatical,.apply{
+          display:none;
+        }
+        .teaching_English{
+          .tab{
+            .country{
+              height:370px;
+            }
+            .type{
+              height:370px;
+
+            }
+            .length{
+              height:370px;
+
+            }
+            .category{
+              height:370px;
+
+            }
+            .salary{
+              height:1624px;
+            }
+            .fee{
+              height:1624px;
+
+            }
+            .qualifications{
+              height:1624px;
+
+            }
+          }
+        }
+        .position{
+          .tab {
+            .country {
+              height: 1050px;
+            }
+            .type {
+              height: 1050px;
+
+            }
+            .length {
+              height: 1050px;
+
+            }
+            .category {
+              height: 1050px;
+
+            }
+            .salary{
+              height:1110px;
+            }
+            .fee{
+              height:1110px;
+
+
+            }
+            .qualifications{
+              height:1110px;
+
+
+            }
+          }
+        }
+        .sabbatical {
+          .tab {
+            .country {
+              height: 900px;
+            }
+            .type {
+              height: 900px;
+
+            }
+            .length {
+              height: 900px;
+
+            }
+            .category {
+              height: 900px;
+
+            }
+            .salary{
+              height:872px;
+            }
+            .fee{
+              height:872px;
+
+
+            }
+            .qualifications{
+              height:872px;
+
+
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

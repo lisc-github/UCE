@@ -1,0 +1,269 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/opensans-condlight-webfont.eot");
+  src: url("../font/OpenSans-CondLight.ttf") format("truetype"), url("../font/opensans-condlight-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-condlight-webfont.woff") format("woff"), url("../font/opensans-condlight-webfont.svg") format("svg"); }
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans-webfont.eot");
+  src: url("../font/openSans.ttf") format("truetype"), url("../font/opensans-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-webfont.woff") format("woff"), url("../font/opensans-webfont.svg") format("svg"); }
+@font-face {
+  font-family: Roboto;
+  src: url("../font/roboto-condensed-webfont.eot");
+  src: url("../font/Roboto-Condensed.ttf") format("truetype"), url("../font/roboto-condensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-condensed-webfont.woff") format("woff"), url("../font/roboto-condensed-webfont.svg") format("svg"); }
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/roboto-boldcondensed-webfont.eot");
+  src: url("../font/Roboto-BoldCondensed.ttf") format("truetype"), url("../font/roboto-boldcondensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-boldcondensed-webfont.woff") format("woff"), url("../font/roboto-boldcondensed-webfont.svg") format("svg"); }
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 9999px; }
+
+body {
+  background: #e3e3e3; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbb; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #777; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #777; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbb; }
+
+input[type='radio'], input[type="checkbox"] {
+  border: none; }
+
+textarea {
+  overflow: auto; }
+
+input[type='submit'] {
+  border: none; }
+
+.header {
+  height: 260px; }
+  .header .wrapper {
+    padding-top: 40px;
+    height: 220px; }
+    .header .wrapper .img {
+      width: 164px;
+      height: 164px;
+      float: left; }
+      .header .wrapper .img img {
+        border: none;
+        width: 100%; }
+    .header .wrapper .text {
+      font-family: "myfont";
+      margin-left: 10px;
+      width: 390px;
+      float: left;
+      font-size: 40px;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      color: #2D2D2D; }
+      .header .wrapper .text .title {
+        padding-bottom: 10px;
+        border-bottom: 2px #ddbf9b solid; }
+      .header .wrapper .text .gateway {
+        font-size: 34px;
+        color: #b77231;
+        font-family: Arial;
+        margin-top: 10px;
+        letter-spacing: 0; }
+
+.mobile_top {
+  display: block !important;
+  background: #8297ea;
+  line-height: 100px;
+  height: 100px;
+  top: 0;
+  left: 0; }
+  .mobile_top .mobile_user_nav {
+    float: left;
+    margin-left: 4px;
+    width: 100px;
+    height: 100%;
+    background: url("../img/head_mobile.png") no-repeat; }
+  .mobile_top .mobile_user_name {
+    position: absolute;
+    width: 330px;
+    left: 50%;
+    margin-left: -165px;
+    font-size: 50px;
+    font-family: Roboto;
+    text-decoration: none;
+    color: #000;
+    text-align: center; }
+
+.shell {
+  width: 1200px;
+  margin: 0 auto; }
+  .shell .clear {
+    clear: both;
+    height: 0; }
+  .shell .user {
+    z-index: 100;
+    width: 360px;
+    height: 850px;
+    background: #ccc;
+    font-family: Roboto;
+    position: absolute;
+    left: -360px; }
+    .shell .user .head {
+      height: 200px;
+      background: url("../img/head.png") center 30px no-repeat;
+      border-bottom: 1px solid #eee;
+      overflow: hidden; }
+      .shell .user .head #username {
+        display: block;
+        text-align: center;
+        margin: 150px auto 0;
+        color: #777;
+        width: 120px;
+        height: 24px;
+        font-size: 24px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden; }
+    .shell .user a {
+      display: block;
+      height: 105px;
+      text-align: center;
+      line-height: 105px;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      color: #333;
+      font-size: 28px; }
+    .shell .user .exit {
+      background: #ce0a0a;
+      color: #fff; }
+    .shell .user .active {
+      border-left: 4px solid red;
+      background: #fff; }
+  .shell .con_box {
+    background: #fff;
+    padding: 2% 2% 4% 2%; }
+    .shell .con_box .my_application {
+      display: none; }
+      .shell .con_box .my_application h2 {
+        margin: 50px 0 80px;
+        font-family: BoldRoboto;
+        font-size: 46px; }
+      .shell .con_box .my_application .title {
+        margin: 50px 0 20px;
+        font-family: Roboto;
+        font-size: 40px; }
+      .shell .con_box .my_application .record .none, .shell .con_box .my_application .status .none {
+        color: #666;
+        font-family: Roboto; }
+      .shell .con_box .my_application .record p, .shell .con_box .my_application .status p {
+        font-size: 34px; }
+    .shell .con_box .security {
+      display: none;
+      font-family: Roboto;
+      margin-bottom: 70px; }
+      .shell .con_box .security a {
+        display: block;
+        height: 80px;
+        border: 1px solid #aaa;
+        text-align: center;
+        line-height: 80px;
+        color: #666;
+        text-decoration: none;
+        margin-bottom: 50px;
+        font-size: 36px; }
+      .shell .con_box .security a:hover {
+        background: #b70f20;
+        color: #fff; }
+      .shell .con_box .security h2 {
+        margin: 50px 0 80px;
+        font-family: BoldRoboto;
+        font-size: 30px; }
+      .shell .con_box .security .password, .shell .con_box .security .Email {
+        display: none;
+        margin-bottom: 60px; }
+        .shell .con_box .security .password .box, .shell .con_box .security .Email .box {
+          overflow: hidden;
+          width: 90%;
+          margin: 0 auto 20px; }
+          .shell .con_box .security .password .box label, .shell .con_box .security .Email .box label {
+            display: inline-block;
+            float: left;
+            width: 32%;
+            height: 70px;
+            line-height: 70px;
+            font-size: 30px; }
+          .shell .con_box .security .password .box input[type="text"], .shell .con_box .security .password .box input[type="password"], .shell .con_box .security .Email .box input[type="text"], .shell .con_box .security .Email .box input[type="password"] {
+            width: 64%;
+            float: right;
+            height: 70px;
+            font-size: 30px; }
+          .shell .con_box .security .password .box input[type="submit"], .shell .con_box .security .Email .box input[type="submit"] {
+            float: right;
+            text-align: center;
+            background: dodgerblue;
+            color: #fff;
+            text-indent: 0;
+            width: 120px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer; }
+        .shell .con_box .security .password .right, .shell .con_box .security .Email .right {
+          float: right;
+          width: 64%; }
+          .shell .con_box .security .password .right .code, .shell .con_box .security .Email .right .code {
+            width: 55%;
+            float: left; }
+            .shell .con_box .security .password .right .code #Verification_Code, .shell .con_box .security .Email .right .code #Verification_Code {
+              width: 99%;
+              font-size: 30px; }
+          .shell .con_box .security .password .right .get_code, .shell .con_box .security .Email .right .get_code {
+            width: 43%;
+            float: right; }
+            .shell .con_box .security .password .right .get_code #get_code, .shell .con_box .security .password .right .get_code #get_code1, .shell .con_box .security .Email .right .get_code #get_code, .shell .con_box .security .Email .right .get_code #get_code1 {
+              width: 100%;
+              text-indent: 0;
+              border-radius: 0;
+              height: 72px;
+              line-height: 72px;
+              font-size: 22px;
+              background: #ddd;
+              color: #777; }
+        .shell .con_box .security .password .return_info, .shell .con_box .security .password .return_info1, .shell .con_box .security .Email .return_info, .shell .con_box .security .Email .return_info1 {
+          display: block;
+          width: 90%;
+          margin: 0 auto;
+          color: red;
+          font-size: 28px; }
+    .shell .con_box .detailed_info {
+      display: none; }
+      .shell .con_box .detailed_info h2 {
+        margin: 50px 0 80px;
+        font-family: BoldRoboto;
+        font-size: 30px; }
+
+.footer {
+  height: 70px;
+  background: #fff;
+  color: #444444;
+  line-height: 70px;
+  text-align: center;
+  margin: 200px 0 30px;
+  font-family: myfont2;
+  letter-spacing: 1px;
+  font-size: 23px; }
+
+@media screen and (max-width: 1400px) {
+  .shell {
+    width: 980px; } }
+
+/*# sourceMappingURL=user_center_mobile.css.map */

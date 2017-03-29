@@ -1,0 +1,672 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/OpenSans-CondLight.ttf"); }
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans.ttf"); }
+@font-face {
+  font-family: myfont3;
+  src: url("../font/Brandon Grot W01 Light.ttf"); }
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Condensed.ttf"); }
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/Roboto-BoldCondensed.ttf"); }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #e3e3e3; }
+
+input {
+  font-size: 14px;
+  border-radius: 6px;
+  text-indent: 1em;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #fff;
+  font-family: Roboto;
+  line-height: 40px\9; }
+
+.red_star {
+  color: red; }
+
+img {
+  border: none; }
+
+textarea {
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  outline: none; }
+
+.clear {
+  clear: both; }
+
+label {
+  color: #666; }
+
+h4 {
+  font-family: BoldRoboto; }
+
+.header {
+  height: 200px; }
+  .header .wrapper {
+    width: 63%;
+    margin: 0 auto;
+    padding-top: 40px;
+    height: 220px; }
+    .header .wrapper .img {
+      width: 100px;
+      height: 100px;
+      float: left; }
+      .header .wrapper .img img {
+        border: none; }
+    .header .wrapper .text {
+      font-family: "myfont";
+      margin-left: 4px;
+      width: 250px;
+      float: left;
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      color: #2D2D2D; }
+      .header .wrapper .text .title {
+        padding-bottom: 10px;
+        border-bottom: 2px #ddbf9b solid; }
+      .header .wrapper .text .gateway {
+        font-size: 18px;
+        color: #b77231;
+        font-family: Arial;
+        margin-top: 10px;
+        letter-spacing: 0; }
+
+.top_box {
+  float: right;
+  width: 530px;
+  margin-top: 40px; }
+  .top_box a {
+    padding: 8px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #cfa883;
+    text-align: center;
+    line-height: 30px;
+    font-family: Roboto;
+    border: 1px solid #cfa883;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+  .top_box a:hover {
+    background: #cfa883;
+    color: #fff; }
+
+.placeholder {
+  color: #bbb; }
+
+.temp {
+  font-family: Roboto;
+  width: 100%;
+  margin: 0 auto; }
+  .temp form {
+    margin-bottom: 10px; }
+    .temp form h2 {
+      font-family: BoldRoboto;
+      font-size: 30px;
+      margin: 50px 0 50px; }
+    .temp form .type {
+      overflow: hidden; }
+      .temp form .type h3 {
+        font-family: BoldRoboto;
+        margin-bottom: 20px;
+        line-height: 40px;
+        color: #b70f20;
+        border-bottom: 4px solid #FF8C00;
+        background: url("../img/triangle.png") no-repeat 60px 28px;
+        background-size: 24px; }
+      .temp form .type .paper, .temp form .type .right {
+        float: left;
+        width: 46%; }
+      .temp form .type .paper {
+        height: 300px;
+        margin-right: 8%;
+        background: url("../img/paper.png");
+        background-size: 100%; }
+      .temp form .type .right {
+        color: #666;
+        position: relative; }
+        .temp form .type .right label {
+          display: block;
+          line-height: 30px;
+          color: #666; }
+        .temp form .type .right #type_of_program {
+          width: 99%;
+          height: 40px;
+          line-height: 40px;
+          float: left;
+          border: 1px solid #aaa;
+          text-indent: 1em;
+          font-size: 18px;
+          background: url("../img/arrow_down.png") 95% 15px no-repeat; }
+        .temp form .type .right .choose_type {
+          background: #fff;
+          position: absolute;
+          display: none;
+          width: 99%;
+          border: 1px solid #999;
+          border-top: none;
+          line-height: 40px; }
+          .temp form .type .right .choose_type p {
+            text-indent: 1em;
+            cursor: pointer; }
+          .temp form .type .right .choose_type p:hover {
+            color: #fff;
+            background: #b5b9ff; }
+        .temp form .type .right .option {
+          width: 100%;
+          height: 250px; }
+          .temp form .type .right .option .each_option {
+            height: 100%;
+            display: none;
+            padding: 7% 5%; }
+            .temp form .type .right .option .each_option label {
+              cursor: pointer;
+              display: block;
+              line-height: 30px; }
+            .temp form .type .right .option .each_option input[type='radio'] {
+              margin-right: 10px; }
+            .temp form .type .right .option .each_option #sabbatical_term {
+              background: none;
+              width: 90%;
+              border: none;
+              outline: none;
+              border-bottom: 2px solid #ccc;
+              height: 30px; }
+          .temp form .type .right .option .none {
+            display: none; }
+    .temp form .info {
+      clear: both;
+      margin-top: 30px; }
+      .temp form .info h3 {
+        margin-bottom: 20px;
+        line-height: 40px;
+        border-bottom: 4px solid #FF8C00;
+        color: #b70f20;
+        font-family: BoldRoboto;
+        background: url("../img/triangle.png") no-repeat 60px 28px;
+        background-size: 24px; }
+      .temp form .info .box {
+        font-family: Roboto;
+        background: #fff;
+        height: 40px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #aaa; }
+        .temp form .info .box .list {
+          background: #fff;
+          display: block;
+          line-height: 40px;
+          text-decoration: none;
+          font-size: 20px;
+          color: #666;
+          padding: 0 20px;
+          height: 40px;
+          position: relative; }
+          .temp form .info .box .list span {
+            position: absolute;
+            right: 20px;
+            *top: 15px; }
+            .temp form .info .box .list span img {
+              height: 12px;
+              width: 12px;
+              margin-left: 2px;
+              padding-top: 1px; }
+        .temp form .info .box .content {
+          border-top: 4px solid red;
+          padding: 20px; }
+          .temp form .info .box .content .row {
+            margin: 10px 0 10px; }
+            .temp form .info .box .content .row input {
+              height: 40px;
+              width: 99%;
+              font-family: Roboto; }
+            .temp form .info .box .content .row #passport_date, .temp form .info .box .content .row #passport_issue_date, .temp form .info .box .content .row #A_phone, .temp form .info .box .content .row #B_phone {
+              float: left; }
+        .temp form .info .box .biological label {
+          display: block;
+          line-height: 30px;
+          float: left;
+          width: 100%; }
+        .temp form .info .box .biological input {
+          float: left; }
+        .temp form .info .box .biological .row .name, .temp form .info .box .biological .row .birthday_gender, .temp form .info .box .biological .row .birth, .temp form .info .box .biological .row .ethnicity_citizen, .temp form .info .box .biological .row .home_address, .temp form .info .box .biological .row .mailing_address, .temp form .info .box .biological .row .number, .temp form .info .box .biological .row .emergency, .temp form .info .box .biological .row .emergency_contact {
+          float: left;
+          width: 30%;
+          margin-right: 2%; }
+        .temp form .info .box .biological .row .birthday input {
+          float: left; }
+        .temp form .info .box .biological .row #emergency_phone {
+          float: left; }
+        .temp form .info .box .biological .row .street, .temp form .info .box .biological .row .e-mail {
+          width: 62%; }
+        .temp form .info .box .biological .row .gender, .temp form .info .box .biological .row .ethnicity {
+          position: relative; }
+          .temp form .info .box .biological .row .gender .gender_option, .temp form .info .box .biological .row .ethnicity .gender_option {
+            background: #fff;
+            position: absolute;
+            bottom: -61px;
+            left: 0; }
+          .temp form .info .box .biological .row .gender .ethnicity_option, .temp form .info .box .biological .row .ethnicity .ethnicity_option {
+            background: #fff;
+            position: absolute; }
+          .temp form .info .box .biological .row .gender #gender, .temp form .info .box .biological .row .ethnicity #gender {
+            background: url("../img/arrow_down.png") 92% 15px no-repeat;
+            width: 60%; }
+          .temp form .info .box .biological .row .gender #ethnicity, .temp form .info .box .biological .row .ethnicity #ethnicity {
+            background: url("../img/arrow_down.png") 92% 15px no-repeat; }
+          .temp form .info .box .biological .row .gender .gender_option, .temp form .info .box .biological .row .gender .ethnicity_option, .temp form .info .box .biological .row .ethnicity .gender_option, .temp form .info .box .biological .row .ethnicity .ethnicity_option {
+            border: 1px solid #ccc;
+            border-top: none;
+            width: 99%;
+            display: none; }
+            .temp form .info .box .biological .row .gender .gender_option p, .temp form .info .box .biological .row .gender .ethnicity_option p, .temp form .info .box .biological .row .ethnicity .gender_option p, .temp form .info .box .biological .row .ethnicity .ethnicity_option p {
+              line-height: 30px;
+              text-indent: 0.5em;
+              cursor: pointer;
+              font-size: 15px; }
+            .temp form .info .box .biological .row .gender .gender_option p:hover, .temp form .info .box .biological .row .gender .ethnicity_option p:hover, .temp form .info .box .biological .row .ethnicity .gender_option p:hover, .temp form .info .box .biological .row .ethnicity .ethnicity_option p:hover {
+              background: #92a9ff;
+              color: #fff; }
+          .temp form .info .box .biological .row .gender .gender_option, .temp form .info .box .biological .row .ethnicity .gender_option {
+            width: 60%; }
+        .temp form .info .box .background span {
+          display: block; }
+        .temp form .info .box .background .degree_certification, .temp form .info .box .background .current_occupation, .temp form .info .box .background .graduate_from {
+          margin: 6px 0 20px;
+          position: relative; }
+          .temp form .info .box .background .degree_certification .degree, .temp form .info .box .background .degree_certification .certification, .temp form .info .box .background .degree_certification .occupation, .temp form .info .box .background .degree_certification .graduate, .temp form .info .box .background .current_occupation .degree, .temp form .info .box .background .current_occupation .certification, .temp form .info .box .background .current_occupation .occupation, .temp form .info .box .background .current_occupation .graduate, .temp form .info .box .background .graduate_from .degree, .temp form .info .box .background .graduate_from .certification, .temp form .info .box .background .graduate_from .occupation, .temp form .info .box .background .graduate_from .graduate {
+            font-size: 15px;
+            position: relative;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            width: 8%;
+            font-weight: 400;
+            color: #0c4757;
+            padding-left: 3%;
+            cursor: pointer; }
+            .temp form .info .box .background .degree_certification .degree input, .temp form .info .box .background .degree_certification .certification input, .temp form .info .box .background .degree_certification .occupation input, .temp form .info .box .background .degree_certification .graduate input, .temp form .info .box .background .current_occupation .degree input, .temp form .info .box .background .current_occupation .certification input, .temp form .info .box .background .current_occupation .occupation input, .temp form .info .box .background .current_occupation .graduate input, .temp form .info .box .background .graduate_from .degree input, .temp form .info .box .background .graduate_from .certification input, .temp form .info .box .background .graduate_from .occupation input, .temp form .info .box .background .graduate_from .graduate input {
+              position: absolute;
+              left: -9999px; }
+            .temp form .info .box .background .degree_certification .degree i, .temp form .info .box .background .degree_certification .certification i, .temp form .info .box .background .degree_certification .occupation i, .temp form .info .box .background .degree_certification .graduate i, .temp form .info .box .background .current_occupation .degree i, .temp form .info .box .background .current_occupation .certification i, .temp form .info .box .background .current_occupation .occupation i, .temp form .info .box .background .current_occupation .graduate i, .temp form .info .box .background .graduate_from .degree i, .temp form .info .box .background .graduate_from .certification i, .temp form .info .box .background .graduate_from .occupation i, .temp form .info .box .background .graduate_from .graduate i {
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              margin-top: -10px;
+              width: 18px;
+              height: 18px;
+              background: url("../img/radio.png");
+              transition: border-color .3s;
+              -webkit-transition: border-color .3s; }
+          .temp form .info .box .background .degree_certification .degree i, .temp form .info .box .background .degree_certification .occupation3 i, .temp form .info .box .background .degree_certification .graduate1 i, .temp form .info .box .background .current_occupation .degree i, .temp form .info .box .background .current_occupation .occupation3 i, .temp form .info .box .background .current_occupation .graduate1 i, .temp form .info .box .background .graduate_from .degree i, .temp form .info .box .background .graduate_from .occupation3 i, .temp form .info .box .background .graduate_from .graduate1 i {
+            background-position-y: 18px; }
+          .temp form .info .box .background .degree_certification #other_con, .temp form .info .box .background .current_occupation #other_con, .temp form .info .box .background .graduate_from #other_con {
+            height: 40px;
+            width: 61%; }
+        .temp form .info .box .background textarea {
+          resize: none;
+          display: block;
+          margin-top: 10px;
+          width: 94%;
+          height: 60px; }
+        .temp form .info .box .background .row .employer, .temp form .info .box .background .row .institution {
+          float: left;
+          width: 46%;
+          margin-right: 2%; }
+          .temp form .info .box .background .row .employer label, .temp form .info .box .background .row .institution label {
+            display: block;
+            line-height: 30px; }
+        .temp form .info .box .background .row .institution {
+          overflow: hidden; }
+          .temp form .info .box .background .row .institution label {
+            float: left; }
+          .temp form .info .box .background .row .institution input {
+            float: left; }
+        .temp form .info .box .background .row .employer input {
+          float: left; }
+        .temp form .info .box .background .institution_con {
+          width: 46%; }
+          .temp form .info .box .background .institution_con label {
+            display: block;
+            width: 100%;
+            line-height: 30px; }
+          .temp form .info .box .background .institution_con .boxes {
+            width: 200%;
+            border: none;
+            overflow: visible; }
+          .temp form .info .box .background .institution_con .yes_con {
+            float: left;
+            width: 50%; }
+            .temp form .info .box .background .institution_con .yes_con label {
+              display: block;
+              float: left; }
+            .temp form .info .box .background .institution_con .yes_con .left_box, .temp form .info .box .background .institution_con .yes_con .right_box {
+              width: 45%;
+              height: 30px;
+              float: left; }
+            .temp form .info .box .background .institution_con .yes_con input {
+              height: 30px;
+              width: 99%;
+              float: left;
+              line-height: 30px\9; }
+            .temp form .info .box .background .institution_con .yes_con span {
+              float: left;
+              text-align: center;
+              height: 32px;
+              line-height: 32px;
+              width: 8%;
+              font-family: BoldRoboto; }
+            .temp form .info .box .background .institution_con .yes_con #type_of_degree, .temp form .info .box .background .institution_con .yes_con #yes_major {
+              width: 90%; }
+            .temp form .info .box .background .institution_con .yes_con #type_of_degree {
+              background: url("../img/arrow_down.png") 95% 10px no-repeat; }
+            .temp form .info .box .background .institution_con .yes_con .type_of_degree {
+              position: relative; }
+              .temp form .info .box .background .institution_con .yes_con .type_of_degree .degree_con {
+                display: none;
+                position: absolute;
+                width: 90%;
+                background: #fff;
+                height: 200px;
+                overflow: scroll;
+                border: 1px solid #ccc; }
+                .temp form .info .box .background .institution_con .yes_con .type_of_degree .degree_con p {
+                  line-height: 30px;
+                  text-indent: 0.5em;
+                  cursor: pointer;
+                  font-size: 15px;
+                  color: #666; }
+                .temp form .info .box .background .institution_con .yes_con .type_of_degree .degree_con p:hover {
+                  background: #92a9ff;
+                  color: #fff; }
+          .temp form .info .box .background .institution_con .no_con {
+            display: none;
+            float: left;
+            width: 50%; }
+            .temp form .info .box .background .institution_con .no_con .anticipated_date_box {
+              float: left;
+              width: 100%; }
+              .temp form .info .box .background .institution_con .no_con .anticipated_date_box input {
+                width: 90%; }
+            .temp form .info .box .background .institution_con .no_con label {
+              display: block;
+              float: left; }
+            .temp form .info .box .background .institution_con .no_con input {
+              width: 90%;
+              height: 30px;
+              float: left;
+              line-height: 30px\9; }
+            .temp form .info .box .background .institution_con .no_con .checkbox {
+              margin-top: 10px; }
+            .temp form .info .box .background .institution_con .no_con #no_type_of_degree {
+              background: url("../img/arrow_down.png") 95% 10px no-repeat; }
+            .temp form .info .box .background .institution_con .no_con input[type="checkbox"] {
+              width: 16px;
+              height: 16px;
+              margin-right: 10px; }
+            .temp form .info .box .background .institution_con .no_con .color {
+              color: #666;
+              display: inline; }
+            .temp form .info .box .background .institution_con .no_con .type_of_degree {
+              position: relative; }
+              .temp form .info .box .background .institution_con .no_con .type_of_degree .no_degree_con {
+                border: 1px solid #ccc;
+                display: none;
+                position: absolute;
+                width: 90%;
+                background: #fff;
+                height: 200px;
+                overflow: scroll; }
+                .temp form .info .box .background .institution_con .no_con .type_of_degree .no_degree_con p {
+                  line-height: 30px;
+                  text-indent: 1em;
+                  cursor: pointer;
+                  color: #666; }
+                .temp form .info .box .background .institution_con .no_con .type_of_degree .no_degree_con p:hover {
+                  background: #92a9ff;
+                  color: #fff; }
+        .temp form .info .box .passport label {
+          display: block;
+          line-height: 30px;
+          float: left;
+          width: 100%; }
+        .temp form .info .box .passport input {
+          float: left; }
+        .temp form .info .box .passport div {
+          overflow: hidden; }
+        .temp form .info .box .passport h4 {
+          margin-bottom: 20px; }
+        .temp form .info .box .passport .upload_box {
+          position: relative; }
+          .temp form .info .box .passport .upload_box .upload {
+            display: inline-block;
+            margin: 10px 10px 30px;
+            width: 240px;
+            height: 60px;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 60px;
+            text-decoration: none;
+            color: #333;
+            background: url("../img/upload.png") no-repeat 22px 40%; }
+            .temp form .info .box .passport .upload_box .upload span {
+              padding-left: 30px; }
+          .temp form .info .box .passport .upload_box input[type="file"] {
+            position: absolute;
+            width: 240px;
+            height: 60px;
+            top: 10px;
+            left: 10px;
+            opacity: 0;
+            z-index: -1;
+            -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+            cursor: pointer; }
+        .temp form .info .box .passport .row label {
+          display: block;
+          line-height: 30px; }
+        .temp form .info .box .passport .row input {
+          width: 62%;
+          height: 40px; }
+        .temp form .info .box .passport .row .country, .temp form .info .box .passport .row .city {
+          float: left;
+          margin-right: 20px;
+          width: 30%; }
+          .temp form .info .box .passport .row .country input, .temp form .info .box .passport .row .city input {
+            width: 99%; }
+        .temp form .info .box .placement {
+          position: relative; }
+          .temp form .info .box .placement label {
+            display: block;
+            line-height: 30px;
+            float: left;
+            width: 100%; }
+          .temp form .info .box .placement input {
+            float: left; }
+          .temp form .info .box .placement .more_btn {
+            cursor: pointer;
+            color: #577bff; }
+          .temp form .info .box .placement .row label {
+            display: block;
+            line-height: 30px; }
+          .temp form .info .box .placement .row input {
+            width: 50%; }
+          .temp form .info .box .placement .row textarea {
+            width: 100%;
+            height: 100px;
+            resize: none;
+            border: 1px solid #ccc; }
+          .temp form .info .box .placement .row .choice_box {
+            position: relative; }
+            .temp form .info .box .placement .row .choice_box #first_choice, .temp form .info .box .placement .row .choice_box #second_choice, .temp form .info .box .placement .row .choice_box #third_choice {
+              background: url("../img/arrow_down.png") 95% 15px no-repeat; }
+            .temp form .info .box .placement .row .choice_box .first_choice, .temp form .info .box .placement .row .choice_box .second_choice, .temp form .info .box .placement .row .choice_box .third_choice {
+              z-index: 20;
+              width: 50%;
+              border: 1px solid #ccc;
+              border-top: none;
+              background: #fff;
+              display: none;
+              position: absolute;
+              left: 0;
+              bottom: -91px;
+              *bottom: -84px; }
+              .temp form .info .box .placement .row .choice_box .first_choice p, .temp form .info .box .placement .row .choice_box .second_choice p, .temp form .info .box .placement .row .choice_box .third_choice p {
+                line-height: 30px;
+                text-indent: 0.5em;
+                cursor: pointer;
+                font-size: 15px; }
+              .temp form .info .box .placement .row .choice_box .first_choice P:hover, .temp form .info .box .placement .row .choice_box .second_choice P:hover, .temp form .info .box .placement .row .choice_box .third_choice P:hover {
+                color: #fff;
+                background: #92a9ff; }
+        .temp form .info .box .reference i {
+          display: block;
+          margin-bottom: 20px; }
+        .temp form .info .box .reference b {
+          font-family: BoldRoboto; }
+        .temp form .info .box .reference label {
+          line-height: 30px; }
+        .temp form .info .box .reference .notice {
+          display: block;
+          margin-top: 20px; }
+        .temp form .info .box .reference .address_phone, .temp form .info .box .reference .organization_position {
+          float: left;
+          width: 46%;
+          margin-right: 2%; }
+        .temp form .info .box .reference .prefix_name {
+          position: relative;
+          float: left;
+          width: 30%;
+          margin-right: 2%; }
+          .temp form .info .box .reference .prefix_name #A_prefix, .temp form .info .box .reference .prefix_name #B_prefix {
+            background: url("../img/arrow_down.png") 92% 15px no-repeat; }
+          .temp form .info .box .reference .prefix_name .a_prefix_con, .temp form .info .box .reference .prefix_name .b_prefix_con {
+            display: none;
+            position: absolute;
+            width: 99%;
+            border: 1px solid #ccc;
+            background: #fff; }
+            .temp form .info .box .reference .prefix_name .a_prefix_con p, .temp form .info .box .reference .prefix_name .b_prefix_con p {
+              text-indent: 0.5em;
+              cursor: pointer;
+              line-height: 30px;
+              font-size: 15px; }
+            .temp form .info .box .reference .prefix_name .a_prefix_con p:hover, .temp form .info .box .reference .prefix_name .b_prefix_con p:hover {
+              color: #fff;
+              background: #b5b9ff; }
+        .temp form .info .box .more_cover {
+          z-index: 60;
+          position: fixed;
+          display: none;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url("../img/opacity.png"); }
+          .temp form .info .box .more_cover .more {
+            position: absolute;
+            z-index: 100;
+            left: 50%;
+            top: 25%;
+            margin-left: -330px;
+            background: #fff;
+            border: 1px solid #ccc;
+            width: 660px; }
+            .temp form .info .box .more_cover .more h2 {
+              height: 60px;
+              line-height: 60px;
+              padding-left: 20px;
+              margin: 0; }
+            .temp form .info .box .more_cover .more .more_content {
+              border-top: 1px solid #ccc;
+              border-bottom: 1px solid #ccc;
+              padding: 20px 20px 40px;
+              line-height: 30px;
+              color: #666; }
+            .temp form .info .box .more_cover .more a {
+              display: block;
+              width: 60px;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              border: 1px solid #ccc;
+              margin: 20px;
+              background: #607cff;
+              color: #fff;
+              text-decoration: none; }
+      .temp form .info .no_border {
+        border-bottom: none; }
+    .temp form .save_submit {
+      overflow: hidden;
+      margin-top: 60px; }
+      .temp form .save_submit a {
+        float: right;
+        width: 160px;
+        height: 40px;
+        background: #0b6dc1;
+        text-align: center;
+        line-height: 40px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 6px; }
+      .temp form .save_submit input[type="submit"] {
+        float: right;
+        width: 160px;
+        height: 40px;
+        background: green;
+        margin-left: 20px;
+        color: #fff;
+        cursor: pointer;
+        text-indent: 0;
+        *line-height: 35px; }
+      .temp form .save_submit input[type="reset"] {
+        float: left;
+        width: 160px;
+        height: 40px;
+        background: #ce0a0a;
+        color: #fff;
+        cursor: pointer;
+        text-indent: 0;
+        *line-height: 35px; }
+  .temp .return_info {
+    color: red; }
+
+.footer {
+  height: 50px;
+  background: #fff;
+  color: #444444;
+  line-height: 50px;
+  text-align: center;
+  margin: 200px 0 30px;
+  font-family: myfont2;
+  letter-spacing: 1px;
+  font-size: 13px; }
+
+@media screen and (max-width: 1640px) {
+  .header .wrapper {
+    width: 1022px; } }
+@media screen and (max-width: 1000px) {
+  .header .wrapper {
+    width: 980px; }
+
+  .footer .wrapper {
+    width: 980px; } }
+@media screen and (max-width: 900px) {
+  .temp form .info .box .placement .more_cover .more {
+    top: 20%; } }
+
+/*# sourceMappingURL=newForm.css.map */

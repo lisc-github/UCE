@@ -1,0 +1,254 @@
+.choose {
+  background: #ccc !important;
+  color: #fff !important; }
+
+.container {
+  font-family: Roboto;
+  color: #666; }
+  .container h1, .container h2, .container h3 {
+    font-family: BoldRoboto; }
+  .container .con {
+    display: none; }
+    .container .con .banner {
+      height: 750px;
+      padding-top: 1px;
+      position: relative;
+      background: url("../img/westlake6.jpg") -1720px -30px no-repeat;
+      background-size: 440%; }
+      .container .con .banner .text {
+        margin: 40px auto;
+        padding: 0 20px; }
+        .container .con .banner .text h1 {
+          color: #fff;
+          font-weight: bold;
+          text-align: center;
+          font-size: 40px; }
+        .container .con .banner .text p {
+          color: #fff;
+          font-size: 34px; }
+      .container .con .banner .pos_nav {
+        z-index: 10;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        margin-left: -351px;
+        bottom: -25px;
+        box-shadow: #ccc 0 0 22px; }
+        .container .con .banner .pos_nav a {
+          font-family: BoldRoboto;
+          font-size: 24px;
+          float: left;
+          height: 50px;
+          background: #fff;
+          line-height: 50px;
+          border-right: 1px solid #ccc;
+          padding: 0 19px;
+          text-decoration: none;
+          text-align: center;
+          color: #666; }
+        .container .con .banner .pos_nav a:hover {
+          background: #cfa883;
+          color: #fff; }
+        .container .con .banner .pos_nav .apply {
+          background: #caca17;
+          color: #fff; }
+        .container .con .banner .pos_nav .apply:hover {
+          background: #caca17; }
+    .container .con .main {
+      width: 100%;
+      overflow: hidden; }
+      .container .con .main .boxes {
+        overflow: hidden;
+        width: 400%; }
+        .container .con .main .boxes .overview, .container .con .main .boxes .type, .container .con .main .boxes .process, .container .con .main .boxes .faq, .container .con .main .boxes .apply {
+          float: left;
+          width: 25%; }
+          .container .con .main .boxes .overview .box, .container .con .main .boxes .type .box, .container .con .main .boxes .process .box, .container .con .main .boxes .faq .box, .container .con .main .boxes .apply .box {
+            margin: 60px auto 0;
+            overflow: hidden;
+            padding: 0 20px; }
+            .container .con .main .boxes .overview .box p, .container .con .main .boxes .type .box p, .container .con .main .boxes .process .box p, .container .con .main .boxes .faq .box p, .container .con .main .boxes .apply .box p {
+              font-size: 34px; }
+            .container .con .main .boxes .overview .box h1, .container .con .main .boxes .type .box h1, .container .con .main .boxes .process .box h1, .container .con .main .boxes .faq .box h1, .container .con .main .boxes .apply .box h1 {
+              width: 100%;
+              color: #b77231;
+              margin-bottom: 30px;
+              font-size: 40px; }
+        .container .con .main .boxes .type {
+          display: none; }
+          .container .con .main .boxes .type h2 {
+            margin-bottom: 10px;
+            font-size: 34px; }
+          .container .con .main .boxes .type .short_term {
+            overflow: hidden;
+            margin-bottom: 30px; }
+            .container .con .main .boxes .type .short_term table {
+              border-collapse: collapse;
+              border: 1px solid #aaa;
+              width: 100%; }
+              .container .con .main .boxes .type .short_term table tr th {
+                text-align: left;
+                padding: 6px;
+                border: 1px solid #aaa;
+                background: #aaa;
+                color: #fff;
+                font-size: 30px; }
+              .container .con .main .boxes .type .short_term table tr .th1 {
+                width: 30%; }
+              .container .con .main .boxes .type .short_term table tr .th2, .container .con .main .boxes .type .short_term table tr .th3, .container .con .main .boxes .type .short_term table tr .th4 {
+                width: 20%; }
+              .container .con .main .boxes .type .short_term table tr td {
+                border: 1px solid #ccc;
+                padding: 6px;
+                background: #fff;
+                font-size: 28px; }
+          .container .con .main .boxes .type .degree {
+            overflow: hidden;
+            margin-bottom: 30px; }
+            .container .con .main .boxes .type .degree table {
+              border-collapse: collapse;
+              border: 1px solid #aaa;
+              width: 100%; }
+              .container .con .main .boxes .type .degree table tr th {
+                text-align: left;
+                padding: 6px;
+                border: 1px solid #aaa;
+                background: #aaa;
+                color: #fff;
+                font-size: 30px; }
+              .container .con .main .boxes .type .degree table tr .th1 {
+                width: 30%; }
+              .container .con .main .boxes .type .degree table tr .th2, .container .con .main .boxes .type .degree table tr .th3, .container .con .main .boxes .type .degree table tr .th4 {
+                width: 20%; }
+              .container .con .main .boxes .type .degree table tr td {
+                border: 1px solid #ccc;
+                padding: 6px;
+                background: #fff;
+                font-size: 28px; }
+          .container .con .main .boxes .type .example {
+            margin-top: 20px; }
+            .container .con .main .boxes .type .example .row {
+              overflow: hidden;
+              margin-bottom: 10px; }
+              .container .con .main .boxes .type .example .row span {
+                font-size: 34px;
+                float: left;
+                width: 5%;
+                height: 30px;
+                line-height: 40px; }
+              .container .con .main .boxes .type .example .row p {
+                line-height: 46px;
+                width: 95%;
+                float: left; }
+            .container .con .main .boxes .type .example .row2 {
+              overflow: hidden;
+              width: 95%;
+              float: right; }
+              .container .con .main .boxes .type .example .row2 span {
+                float: left;
+                width: 3%;
+                height: 46px;
+                line-height: 46px;
+                font-size: 30px;
+                font-weight: bold; }
+              .container .con .main .boxes .type .example .row2 p {
+                line-height: 46px;
+                width: 97%;
+                float: left; }
+            .container .con .main .boxes .type .example table {
+              border-collapse: collapse;
+              border: 1px solid #aaa;
+              width: 100%; }
+              .container .con .main .boxes .type .example table tr th {
+                text-align: left;
+                padding: 6px;
+                border: 1px solid #aaa;
+                background: #aaa;
+                color: #fff;
+                font-size: 30px; }
+              .container .con .main .boxes .type .example table tr .th1 {
+                width: 30%; }
+              .container .con .main .boxes .type .example table tr .th2, .container .con .main .boxes .type .example table tr .th3, .container .con .main .boxes .type .example table tr .th4 {
+                width: 20%; }
+              .container .con .main .boxes .type .example table tr td {
+                border: 1px solid #ccc;
+                padding: 6px;
+                background: #fff;
+                font-size: 28px; }
+        .container .con .main .boxes .process {
+          display: none; }
+          .container .con .main .boxes .process .row {
+            overflow: hidden; }
+            .container .con .main .boxes .process .row span {
+              float: left;
+              width: 5%;
+              height: 46px;
+              line-height: 46px;
+              font-size: 34px; }
+            .container .con .main .boxes .process .row p {
+              line-height: 46px;
+              width: 95%;
+              float: left; }
+          .container .con .main .boxes .process .row2 {
+            overflow: hidden;
+            width: 95%;
+            float: right; }
+            .container .con .main .boxes .process .row2 span {
+              float: left;
+              width: 2%;
+              height: 46px;
+              line-height: 46px;
+              font-size: 30px;
+              font-weight: bold; }
+            .container .con .main .boxes .process .row2 p {
+              line-height: 46px;
+              width: 98%;
+              float: left; }
+        .container .con .main .boxes .faq {
+          display: none; }
+          .container .con .main .boxes .faq .question {
+            padding: 6px 0 20px; }
+          .container .con .main .boxes .faq a {
+            line-height: 46px;
+            color: #6781b7;
+            text-decoration: none;
+            font-size: 34px; }
+          .container .con .main .boxes .faq a:hover {
+            color: #b77231;
+            text-decoration: underline; }
+          .container .con .main .boxes .faq .box1 {
+            position: fixed;
+            z-index: 20;
+            width: 100%;
+            height: 100%;
+            background: url("../img/opacity.png");
+            top: 0;
+            left: 0;
+            display: none; }
+            .container .con .main .boxes .faq .box1 .detail {
+              background: #fff;
+              position: absolute;
+              width: 98%;
+              padding-bottom: 6px;
+              left: 50%;
+              top: 50%; }
+              .container .con .main .boxes .faq .box1 .detail h2 {
+                padding: 12px 10px;
+                width: 90%;
+                font-size: 40px; }
+              .container .con .main .boxes .faq .box1 .detail p {
+                padding: 0 10px;
+                line-height: 46px; }
+              .container .con .main .boxes .faq .box1 .detail a {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                background: url("../img/close.png"); }
+              .container .con .main .boxes .faq .box1 .detail a:hover {
+                background: url("../img/close_red.png"); }
+
+/*# sourceMappingURL=uce_study_mobile.css.map */

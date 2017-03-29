@@ -1,0 +1,220 @@
+
+.choose{
+  background:#ccc !important;
+  color:#fff !important;
+}
+.nav_active{
+  background-color:#b77231 !important;
+  color:#e3e3e3 !important;
+}
+.nav{
+  position: relative;
+  height:100px;
+  background:#ffffff;
+  width:100%;
+  .wrapper{
+    position: absolute;
+    left:-360px;
+    top:100px;
+    z-index:100;
+    width:360px;
+    a{
+      display:block;
+      color:#fff;
+      background:#000;
+      text-decoration: none;
+      width:100%;
+      text-align: center;
+      line-height: 105px;
+      font-family: "myfont2";
+      font-size: 28px;
+      //background:transparent;
+    }
+    .list{
+      display:none;
+      position: absolute;
+      top:44px;
+      left:142px;
+      width:136px;
+      z-index:10;
+      text-align: center;
+      background:#fff;
+      line-height: 30px;
+      font-family:myfont2;
+      font-size: 14px;
+      li:hover{
+        cursor:pointer;
+      }
+    }
+  }
+  .mobile_top{
+    display: block !important;
+    position: absolute;
+    line-height:100px;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    .mobile_nav{
+      float: left;
+      margin-left:4px;
+      width:100px;
+      height:100%;
+      background:url("../img/menu.jpg") no-repeat;
+    }
+    .mobile_name{
+      position:absolute;
+      width:330px;
+      left:50%;
+      margin-left:-165px;
+      font-size: 40px;
+      font-family: Roboto;
+      text-decoration: none;
+      color:#000;
+      text-align: center;
+    }
+  }
+}
+
+.container{
+  font-family: "Roboto";
+  color:#666;
+  .wrapper{
+    .con{
+      display:none;
+      margin-top:40px;
+      h1{
+        margin-bottom:20px;
+        color:#b77231;
+        font-weight: normal;
+        font-family: BoldRoboto;
+        font-size: 40px;
+      }
+    }
+    .con_about{
+      overflow: hidden;
+      .photo{
+        overflow: hidden;
+        .pic_row{
+          overflow: hidden;
+          margin-bottom:2%;
+          .pic_box{
+            float: left;
+            width:23.5%;
+            height:170px;
+            margin-right:2%;
+            overflow: hidden;
+          }
+          img{
+            width:120%;
+          }
+          .add_pic{
+            width:100%;
+            height:176px;
+            background:url("../img/add.png") no-repeat center #888;
+            margin-bottom:24px;
+            cursor:pointer;
+          }
+          .upload_box{
+            display:none;
+            z-index:500;
+            position: fixed;
+            background:url("../img/opacity1.png");
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            .upload{
+              position: absolute;
+              padding:20px 2%;
+              width:80%;
+              height:336px;
+              left:50%;
+              top:50%;
+              margin-left:-42%;
+              margin-top:-170px;
+              background:#fff;
+              h3{
+                font-size: 40px;
+                margin-bottom:30px;
+              }
+              input[type='file']{
+                font-size: 30px;
+              }
+              input[type='submit']{
+                width:160px;
+                height:60px;
+                background:red;
+                border:none;
+                color:#fff;
+                margin-top:30px;
+                font-size: 30px;
+              }
+              .upload_file{
+                font-size:22px;
+              }
+              .close{
+                cursor:pointer;
+                position:absolute;
+                right:0;
+                top:0;
+                width:80px;
+                height:80px;
+                background:url("../img/close.png") no-repeat;
+                background-size:100%;
+              }
+            }
+          }
+
+          .add_pic:hover{
+            background-color:#777;
+          }
+        }
+      }
+      .load{
+        text-align: center;
+        cursor:pointer;
+        span{
+          display: inline-block;
+          padding:0 280px;
+          height:70px;
+          line-height:70px;
+          background:#fff;
+          font-size: 30px;
+        }
+
+      }
+    }
+  }
+}
+.pic_show{
+  display: none;
+  position:fixed;
+  z-index:100;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background:url("../img/opacity1.png");
+  .show{
+    position:absolute;
+    width:90%;
+    height:1000px;
+    left:50%;
+    top:50%;
+    margin-left:-45%;
+    margin-top:-500px;
+    overflow: hidden;
+    background-size:180%;
+  }
+  .close{
+    width:120px;
+    height:120px;
+    position:absolute;
+    right:0;
+    top:0;
+    background:url("../img/close1.png") no-repeat;
+    background-size:100%;
+    cursor:pointer;
+  }
+}

@@ -1,0 +1,482 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/opensans-condlight-webfont.eot");
+  src: url("../font/OpenSans-CondLight.ttf") format('truetype'),
+  url("../font/opensans-condlight-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/opensans-condlight-webfont.woff") format('woff'),
+  url("../font/opensans-condlight-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans-webfont.eot");
+  src: url("../font/openSans.ttf") format('truetype'),
+  url("../font/opensans-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/opensans-webfont.woff") format('woff'),
+  url("../font/opensans-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../font/roboto-condensed-webfont.eot");
+  src: url("../font/Roboto-Condensed.ttf") format('truetype'),
+  url("../font/roboto-condensed-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/roboto-condensed-webfont.woff") format('woff'),
+  url("../font/roboto-condensed-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/roboto-boldcondensed-webfont.eot");
+  src: url("../font/Roboto-BoldCondensed.ttf") format('truetype'),
+  url("../font/roboto-boldcondensed-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/roboto-boldcondensed-webfont.woff") format('woff'),
+  url("../font/roboto-boldcondensed-webfont.svg") format('svg');
+}
+
+*{
+  margin:0;
+  padding:0;
+  max-height:9999px;
+}
+ul{
+  list-style: none;
+}
+body{
+  background:#e3e3e3;
+}
+.clear{
+  clear: both;
+}
+.wrapper{
+  width:1200px;
+  margin:0 auto;
+}
+th,h1,h2,h3{
+  font-family: BoldRoboto;
+}
+.header{
+  height:200px;
+  .wrapper{
+    padding-top:40px;
+    height:220px;
+    .img{
+      width: 100px;
+      height:100px;
+      float:left;
+      img{
+        border:none;
+      }
+    }
+    .text {
+      font-family: "myfont";
+      margin-left: 4px;
+      width: 250px;
+      float: left;
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      color: #2D2D2D;
+      .title {
+        padding-bottom: 10px;
+        border-bottom: 2px #ddbf9b solid;
+      }
+      .gateway {
+        font-size: 18px;
+        color: rgba(183, 114, 49, 1);
+        font-family: Arial;
+        margin-top: 10px;
+        letter-spacing: 0;
+      }
+    }
+    .login_apply{
+      float: right;
+      width:120px;
+      margin-top:30px;
+      a{
+        display: block;
+        text-decoration: none;
+        color:#333;
+        text-align: center;
+        line-height:30px;
+        font-family: Roboto;
+        //border:1px solid #aaa;
+        margin-bottom:6px;background:#fff;
+      }
+      a:hover{
+        background:red;
+        color:#fff;
+      }
+    }
+  }
+}
+.nav_active{
+  background-color:#cfa883 !important;
+  color:#e3e3e3 !important;
+}
+.nav{
+  height:44px;
+  background:#b77231;
+  .wrapper{
+    position: relative;
+    a{
+      display:inline-block;
+      text-decoration: none;
+      width:16.667%;
+      color:#2D2D2D;
+      text-align: center;
+      line-height: 44px;
+      font-family: "myfont2";
+      font-size: 13px;
+      background:transparent;
+    }
+    .list{
+      display:none;
+      position: absolute;
+      top:44px;
+      left:142px;
+      width:136px;
+      z-index:10;
+      text-align: center;
+      background:#fff;
+      line-height: 30px;
+      font-family:myfont2;
+      font-size: 14px;
+      li:hover{
+        cursor:pointer;
+      }
+    }
+  }
+}
+.top_box{
+  float: right;
+  width:530px;
+  margin-top:40px;
+  a{
+    padding:8px 20px;
+    margin-right:10px;
+    text-decoration: none;
+    color:#cfa883;
+    text-align: center;
+    line-height:30px;
+    font-family: Roboto;
+    border:1px solid #cfa883;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+  }
+  a:hover{
+    background:#cfa883;
+    color:#fff;
+  }
+}
+.container{
+  color:#666;
+  .con{
+    display:none;
+    .banner{
+      height:440px;
+      background:url("../img/westlake2.jpg") no-repeat -100px -20px;
+      position: relative;
+      padding-top:1px;
+      .text{
+        width:1000px;
+        margin:40px auto;
+        h1{
+          color:#fff;
+          font-weight: bold;
+          text-align: center;
+          font-size: 36px;
+        }
+        p{
+          font-family: Roboto;
+          color:#fff;
+          font-size: 15px;
+        }
+      }
+      .pos_nav{
+        z-index: 10;
+        overflow: hidden;
+        position:absolute;
+        left:50%;
+        margin-left:-246px;
+        bottom:-25px;
+        box-shadow: #ccc 0 0 22px;
+        a{
+          font-size: 14px;
+          float: left;
+          height:50px;
+          background:#fff;
+          line-height: 50px;
+          border-right:1px solid #ccc;
+          padding:0 19px;
+          text-decoration: none;
+          text-align: center;
+          color:#666;
+          font-family:BoldRoboto;
+        }
+        a:hover{
+          background:rgb(207,168,131);
+          color:#fff;
+        }
+        .apply{
+          background:#caca17;
+          color:#fff;
+        }
+        .apply:hover{
+          background:#caca17;
+        }
+      }
+    }
+    .main{
+      width:100%;
+      overflow: hidden;
+     .boxes{
+       overflow: hidden;
+       width:400%;
+       .qualification,.calendar,.apply{
+         display:none;
+       }
+       .fee,.qualification,.calendar,.apply{
+         float: left;
+         width:25%;
+         overflow: hidden;
+         top:0;
+         left:0;
+         padding:60px 0;
+         .box{
+           width:1000px;
+           margin:0 auto;
+           h1{
+             margin-bottom:20px;
+             color:#b77231;
+             font-weight: normal;
+           }
+           p{
+             margin:20px 0;
+             font-size: 15px;
+             font-family: Roboto;
+           }
+           ul{
+             list-style: disc;
+             margin:20px 0 0 30px;
+             li{
+               font-size: 14px;
+               font-family: Roboto;
+               line-height: 24px;
+             }
+             span{
+               font-weight: bolder;
+               font-size: 24px;
+               vertical-align: baseline;
+               margin-right:10px;
+             }
+           }
+           .left{
+             float: left;
+             width:500px;
+           }
+
+         }
+       }
+       .fee{
+         .img{
+           float: right;
+           width:400px;
+           height:220px;
+         }
+       }
+       .qualification{
+         .img{
+           float: right;
+           width:400px;
+           height:300px;
+         }
+       }
+       .calendar{
+         .box{
+           table{
+             font-family:Roboto;
+
+           }
+           th{
+             height:60px;
+             color:#666;
+             font-size: 20px;
+             //background:#00c1de;
+             background:#aaa;
+           }
+           td{
+             color:#666;
+             background:#fff;
+             font-size: 14px;
+           }
+           h3{
+             font-size: 26px;
+             margin-top:30px;
+
+           }
+           .camp1{
+             h4{
+               margin-bottom:10px;
+               text-align: center;
+             }
+             table{
+               border-collapse: collapse;
+               margin:10px auto 80px;
+               width:1000px;
+               tr{
+                 td{
+                   border:1px solid #eee;
+                   padding:8px 12px;
+                 }
+                 .td1{
+                   width:160px;
+                 }
+                 .td2{
+                   width:60px;
+                 }
+                 .td3{
+                 }
+               }
+             }
+           }
+           .camp2{
+
+             table{
+               width:1000px;
+               border-collapse:collapse;
+               margin:10px auto 80px;
+               tr{
+                 td{
+                   border:1px solid #eee;
+                   padding:8px 12px;
+                 }
+                 .td1{
+                   width:120px;
+                 }
+                 .td2{
+                   width:60px;
+                 }
+                 .td{
+                   width:260px;
+                 }
+                 .td_border{
+                   border-right:1px solid #666;
+                 }
+               }
+             }
+           }
+         }
+         .schedule{
+           table{
+             border-collapse: collapse;
+             width:1000px;
+             margin:0 auto;
+             .th1{
+               width:26%;
+             }
+             td{
+               border:1px solid #eee;
+               padding:8px 12px;
+             }
+             .td1{
+               width:120px;
+             }
+           }
+         }
+       }
+     }
+    }
+
+  }
+}
+.choose{
+  background:#ccc !important;
+  color:#fff !important;
+}
+.footer{
+  height:50px;
+  background:#fff;
+  color:#444444;
+  line-height: 50px;
+  text-align: center;
+  margin:200px 0 30px;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.top{
+  background:url("../img/arrowup.png") 3px -5px no-repeat #aaa;
+  display: none;
+  position:fixed;
+  right:80px;
+  bottom:30px;
+  width:80px;
+  height:80px;
+  cursor:pointer;
+}
+.top:hover{
+  background:url("../img/arrowup.png") 3px -5px no-repeat #666;
+}
+
+@media screen and (max-width: 1400px){
+  .wrapper{
+    width:960px;
+  }
+  .container .con .banner .text{
+    width:860px;
+  }
+  .container .con .main .boxes  .pro_length .box, .container .con .main .boxes  .fee .box, .container .con .main .boxes  .qualification .box, .container .con .main .boxes  .calendar .box{
+    width:900px;
+  }
+  .container .con .main .boxes  .calendar .box .camp1 table{
+    width:900px;
+  }
+  .container .con .main .boxes  .calendar .box .camp2 table{
+    width:900px;
+  }
+  .container .con .main .boxes  .calendar .box .schedule table{
+    width:900px;
+  }
+  .top{
+    right:20px;
+  }
+  .container .con .main .boxes .fee .box .img, .container .con .main .boxes .qualification .box .img, .container .con .main .boxes .calendar .box .img, .container .con .main .boxes .apply .box .img{
+    width:400px;
+  }
+  .container .con .main .boxes .fee .box .left, .container .con .main .boxes .qualification .box .left, .container .con .main .boxes .calendar .box .left, .container .con .main .boxes .apply .box .left{
+    width:460px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .banner {
+    width: 980px;
+  }
+  .nav, .footer {
+    width: 980px;
+  }
+  .container .con .main{
+    width:980px;
+  }
+}
+
+.header .wrapper .logo{
+  overflow: hidden;
+  float: left;
+}
+.header .wrapper .logo .text{
+  height:110px;
+  overflow: hidden;
+}
+.header .wrapper .top{
+  overflow: hidden;
+  float: left;
+}
+.header .wrapper .top_box{
+  height:40px;
+  overflow: hidden;
+}
+.header .wrapper .top_box a{
+  line-height:40px;
+}
+
+

@@ -1,0 +1,244 @@
+.choose {
+  background: #ccc !important;
+  color: #fff !important; }
+
+.container {
+  font-family: Roboto;
+  color: #666; }
+  .container h1, .container h2, .container h3 {
+    font-family: BoldRoboto; }
+  .container .con {
+    display: none; }
+    .container .con .banner {
+      height: 1200px;
+      padding-top: 1px;
+      position: relative;
+      background: url("../img/westlake3.jpg") 0 -80px no-repeat;
+      background-size: 360%; }
+      .container .con .banner .text {
+        margin: 40px auto;
+        padding: 0 20px; }
+        .container .con .banner .text h1 {
+          color: #fff;
+          font-weight: bold;
+          text-align: center;
+          font-size: 40px; }
+        .container .con .banner .text p {
+          color: #fff;
+          font-size: 34px; }
+      .container .con .banner .pos_nav {
+        z-index: 10;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        margin-left: -451px;
+        bottom: -25px;
+        box-shadow: #ccc 0 0 22px; }
+        .container .con .banner .pos_nav a {
+          font-family: BoldRoboto;
+          font-size: 24px;
+          float: left;
+          height: 50px;
+          background: #fff;
+          line-height: 50px;
+          border-right: 1px solid #ccc;
+          padding: 0 19px;
+          text-decoration: none;
+          text-align: center;
+          color: #666; }
+        .container .con .banner .pos_nav a:hover {
+          background: #cfa883;
+          color: #fff; }
+        .container .con .banner .pos_nav .apply {
+          background: #caca17;
+          color: #fff; }
+        .container .con .banner .pos_nav .apply:hover {
+          background: #caca17; }
+    .container .con .main {
+      width: 100%;
+      overflow: hidden; }
+      .container .con .main .boxes {
+        overflow: hidden;
+        width: 400%; }
+        .container .con .main .boxes .teaching_English, .container .con .main .boxes .position, .container .con .main .boxes .sabbatical, .container .con .main .boxes .apply {
+          padding: 0 20px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          float: left;
+          width: 25%; }
+          .container .con .main .boxes .teaching_English h1, .container .con .main .boxes .position h1, .container .con .main .boxes .sabbatical h1, .container .con .main .boxes .apply h1 {
+            margin: 60px auto 30px;
+            color: #b77231;
+            font-size: 40px; }
+          .container .con .main .boxes .teaching_English .box, .container .con .main .boxes .position .box, .container .con .main .boxes .sabbatical .box, .container .con .main .boxes .apply .box {
+            margin: 0 auto 40px;
+            overflow: hidden; }
+            .container .con .main .boxes .teaching_English .box .img, .container .con .main .boxes .position .box .img, .container .con .main .boxes .sabbatical .box .img, .container .con .main .boxes .apply .box .img {
+              height: 386px;
+              overflow: hidden;
+              background: url("../img/work_pic1.jpg") -15px -50px no-repeat;
+              background-size: 110%; }
+              .container .con .main .boxes .teaching_English .box .img img, .container .con .main .boxes .position .box .img img, .container .con .main .boxes .sabbatical .box .img img, .container .con .main .boxes .apply .box .img img {
+                width: 124%;
+                display: none; }
+            .container .con .main .boxes .teaching_English .box .detail, .container .con .main .boxes .position .box .detail, .container .con .main .boxes .sabbatical .box .detail, .container .con .main .boxes .apply .box .detail {
+              font-size: 34px;
+              margin-top: 16px;
+              line-height: 40px; }
+            .container .con .main .boxes .teaching_English .box .img2, .container .con .main .boxes .position .box .img2, .container .con .main .boxes .sabbatical .box .img2, .container .con .main .boxes .apply .box .img2 {
+              height: 386px;
+              overflow: hidden;
+              background: url("../img/work_pic2.jpg") -84px -170px no-repeat;
+              background-size: 110%; }
+              .container .con .main .boxes .teaching_English .box .img2 img, .container .con .main .boxes .position .box .img2 img, .container .con .main .boxes .sabbatical .box .img2 img, .container .con .main .boxes .apply .box .img2 img {
+                width: 124%;
+                display: none; }
+            .container .con .main .boxes .teaching_English .box .detail2, .container .con .main .boxes .position .box .detail2, .container .con .main .boxes .sabbatical .box .detail2, .container .con .main .boxes .apply .box .detail2 {
+              font-size: 34px;
+              margin-top: 16px;
+              line-height: 40px; }
+          .container .con .main .boxes .teaching_English .warning, .container .con .main .boxes .position .warning, .container .con .main .boxes .sabbatical .warning, .container .con .main .boxes .apply .warning {
+            margin: 0 auto;
+            font-size: 26px;
+            font-style: italic; }
+          .container .con .main .boxes .teaching_English .guide, .container .con .main .boxes .position .guide, .container .con .main .boxes .sabbatical .guide, .container .con .main .boxes .apply .guide {
+            font-size: 26px;
+            margin: 20px auto;
+            color: red; }
+          .container .con .main .boxes .teaching_English .tab, .container .con .main .boxes .position .tab, .container .con .main .boxes .sabbatical .tab, .container .con .main .boxes .apply .tab {
+            margin: 0 auto 60px; }
+            .container .con .main .boxes .teaching_English .tab table, .container .con .main .boxes .position .tab table, .container .con .main .boxes .sabbatical .tab table, .container .con .main .boxes .apply .tab table {
+              border-collapse: collapse;
+              width: 100%; }
+          .container .con .main .boxes .teaching_English .process, .container .con .main .boxes .position .process, .container .con .main .boxes .sabbatical .process, .container .con .main .boxes .apply .process {
+            margin-top: 60px; }
+            .container .con .main .boxes .teaching_English .process .box, .container .con .main .boxes .position .process .box, .container .con .main .boxes .sabbatical .process .box, .container .con .main .boxes .apply .process .box {
+              margin: 0 auto;
+              overflow: hidden; }
+              .container .con .main .boxes .teaching_English .process .box h3, .container .con .main .boxes .position .process .box h3, .container .con .main .boxes .sabbatical .process .box h3, .container .con .main .boxes .apply .process .box h3 {
+                margin-bottom: 12px;
+                font-size: 40px; }
+              .container .con .main .boxes .teaching_English .process .box p, .container .con .main .boxes .position .process .box p, .container .con .main .boxes .sabbatical .process .box p, .container .con .main .boxes .apply .process .box p {
+                line-height: 42px;
+                font-size: 30px; }
+              .container .con .main .boxes .teaching_English .process .box .decoration, .container .con .main .boxes .position .process .box .decoration, .container .con .main .boxes .sabbatical .process .box .decoration, .container .con .main .boxes .apply .process .box .decoration {
+                text-decoration: underline; }
+              .container .con .main .boxes .teaching_English .process .box ul, .container .con .main .boxes .position .process .box ul, .container .con .main .boxes .sabbatical .process .box ul, .container .con .main .boxes .apply .process .box ul {
+                margin-left: 30px; }
+                .container .con .main .boxes .teaching_English .process .box ul li, .container .con .main .boxes .position .process .box ul li, .container .con .main .boxes .sabbatical .process .box ul li, .container .con .main .boxes .apply .process .box ul li {
+                  line-height: 30px;
+                  height: 36px;
+                  font-size: 26px; }
+                  .container .con .main .boxes .teaching_English .process .box ul li span, .container .con .main .boxes .position .process .box ul li span, .container .con .main .boxes .sabbatical .process .box ul li span, .container .con .main .boxes .apply .process .box ul li span {
+                    font-family: BoldRoboto;
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 30px;
+                    height: 30px;
+                    line-height: 26px;
+                    vertical-align: top; }
+        .container .con .main .boxes .teaching_English .border, .container .con .main .boxes .position .border, .container .con .main .boxes .sabbatical .border {
+          height: 100%;
+          border-right: 1px solid #ccc; }
+        .container .con .main .boxes .teaching_English .box p, .container .con .main .boxes .position .box p, .container .con .main .boxes .sabbatical .box p {
+          font-size: 34px; }
+        .container .con .main .boxes .teaching_English .tab, .container .con .main .boxes .position .tab, .container .con .main .boxes .sabbatical .tab {
+          margin: 0 auto;
+          background: #fff;
+          overflow: hidden; }
+          .container .con .main .boxes .teaching_English .tab h2, .container .con .main .boxes .position .tab h2, .container .con .main .boxes .sabbatical .tab h2 {
+            margin: 0 0 10px 0;
+            background: #aaa;
+            color: #fff;
+            line-height: 40px;
+            padding: 10px;
+            text-align: center; }
+          .container .con .main .boxes .teaching_English .tab p, .container .con .main .boxes .teaching_English .tab h3, .container .con .main .boxes .position .tab p, .container .con .main .boxes .position .tab h3, .container .con .main .boxes .sabbatical .tab p, .container .con .main .boxes .sabbatical .tab h3 {
+            font-size: 28px;
+            padding: 0 22px; }
+          .container .con .main .boxes .teaching_English .tab p, .container .con .main .boxes .position .tab p, .container .con .main .boxes .sabbatical .tab p {
+            line-height: 46px; }
+            .container .con .main .boxes .teaching_English .tab p span, .container .con .main .boxes .position .tab p span, .container .con .main .boxes .sabbatical .tab p span {
+              margin-right: 10px;
+              font-size: 24px; }
+          .container .con .main .boxes .teaching_English .tab h3, .container .con .main .boxes .position .tab h3, .container .con .main .boxes .sabbatical .tab h3 {
+            line-height: 30px;
+            font-family: BoldRoboto; }
+          .container .con .main .boxes .teaching_English .tab .country, .container .con .main .boxes .position .tab .country, .container .con .main .boxes .sabbatical .tab .country {
+            float: left;
+            width: 16%;
+            text-align: center; }
+          .container .con .main .boxes .teaching_English .tab .type, .container .con .main .boxes .position .tab .type, .container .con .main .boxes .sabbatical .tab .type {
+            float: left;
+            width: 25%; }
+          .container .con .main .boxes .teaching_English .tab .length, .container .con .main .boxes .position .tab .length, .container .con .main .boxes .sabbatical .tab .length {
+            float: left;
+            width: 25%; }
+          .container .con .main .boxes .teaching_English .tab .category, .container .con .main .boxes .position .tab .category, .container .con .main .boxes .sabbatical .tab .category {
+            float: left;
+            width: 34%; }
+        .container .con .main .boxes .teaching_English .tab2, .container .con .main .boxes .position .tab2, .container .con .main .boxes .sabbatical .tab2 {
+          margin: 30px auto 0;
+          background: #fff;
+          overflow: hidden; }
+          .container .con .main .boxes .teaching_English .tab2 h2, .container .con .main .boxes .position .tab2 h2, .container .con .main .boxes .sabbatical .tab2 h2 {
+            margin: 0 0 10px 0;
+            background: #aaa;
+            color: #fff;
+            line-height: 40px; }
+          .container .con .main .boxes .teaching_English .tab2 .salary, .container .con .main .boxes .position .tab2 .salary, .container .con .main .boxes .sabbatical .tab2 .salary {
+            float: left;
+            width: 36%; }
+          .container .con .main .boxes .teaching_English .tab2 .fee, .container .con .main .boxes .position .tab2 .fee, .container .con .main .boxes .sabbatical .tab2 .fee {
+            float: left;
+            width: 28%; }
+          .container .con .main .boxes .teaching_English .tab2 .qualifications, .container .con .main .boxes .position .tab2 .qualifications, .container .con .main .boxes .sabbatical .tab2 .qualifications {
+            float: left;
+            width: 36%; }
+        .container .con .main .boxes .position, .container .con .main .boxes .sabbatical, .container .con .main .boxes .apply {
+          display: none; }
+        .container .con .main .boxes .teaching_English .tab .country {
+          height: 370px; }
+        .container .con .main .boxes .teaching_English .tab .type {
+          height: 370px; }
+        .container .con .main .boxes .teaching_English .tab .length {
+          height: 370px; }
+        .container .con .main .boxes .teaching_English .tab .category {
+          height: 370px; }
+        .container .con .main .boxes .teaching_English .tab .salary {
+          height: 1624px; }
+        .container .con .main .boxes .teaching_English .tab .fee {
+          height: 1624px; }
+        .container .con .main .boxes .teaching_English .tab .qualifications {
+          height: 1624px; }
+        .container .con .main .boxes .position .tab .country {
+          height: 1050px; }
+        .container .con .main .boxes .position .tab .type {
+          height: 1050px; }
+        .container .con .main .boxes .position .tab .length {
+          height: 1050px; }
+        .container .con .main .boxes .position .tab .category {
+          height: 1050px; }
+        .container .con .main .boxes .position .tab .salary {
+          height: 1110px; }
+        .container .con .main .boxes .position .tab .fee {
+          height: 1110px; }
+        .container .con .main .boxes .position .tab .qualifications {
+          height: 1110px; }
+        .container .con .main .boxes .sabbatical .tab .country {
+          height: 900px; }
+        .container .con .main .boxes .sabbatical .tab .type {
+          height: 900px; }
+        .container .con .main .boxes .sabbatical .tab .length {
+          height: 900px; }
+        .container .con .main .boxes .sabbatical .tab .category {
+          height: 900px; }
+        .container .con .main .boxes .sabbatical .tab .salary {
+          height: 872px; }
+        .container .con .main .boxes .sabbatical .tab .fee {
+          height: 872px; }
+        .container .con .main .boxes .sabbatical .tab .qualifications {
+          height: 872px; }
+
+/*# sourceMappingURL=teach_mobile.css.map */

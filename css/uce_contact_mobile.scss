@@ -1,0 +1,347 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/opensans-condlight-webfont.eot");
+  src: url("../font/OpenSans-CondLight.ttf") format('truetype'),
+  url("../font/opensans-condlight-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/opensans-condlight-webfont.woff") format('woff'),
+  url("../font/opensans-condlight-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans-webfont.eot");
+  src: url("../font/openSans.ttf") format('truetype'),
+  url("../font/opensans-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/opensans-webfont.woff") format('woff'),
+  url("../font/opensans-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../font/roboto-condensed-webfont.eot");
+  src: url("../font/Roboto-Condensed.ttf") format('truetype'),
+  url("../font/roboto-condensed-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/roboto-condensed-webfont.woff") format('woff'),
+  url("../font/roboto-condensed-webfont.svg") format('svg');
+}
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/roboto-boldcondensed-webfont.eot");
+  src: url("../font/Roboto-BoldCondensed.ttf") format('truetype'),
+  url("../font/roboto-boldcondensed-webfont.eot?#iefix'") format('embedded-opentype'),
+  url("../font/roboto-boldcondensed-webfont.woff") format('woff'),
+  url("../font/roboto-boldcondensed-webfont.svg") format('svg');
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #bbb;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #777;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #777;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #bbb;
+}
+*{
+  margin:0;
+  padding:0;
+  max-height:9999px;
+}
+input,textarea{
+  background:#fff;
+  font-family: Roboto;
+  font-size: 14px;
+  text-indent: 0.5em;
+  overflow: auto;
+}
+.placeholder{
+  color:#bbb;
+}
+ul{
+  list-style: none;
+}
+body{
+  background:#e3e3e3;
+}
+*{
+
+}
+.clear{
+  clear: both;
+  height:0;
+}
+.wrapper{
+  margin:0 auto;
+}
+.header{
+  height:260px;
+  .wrapper{
+    padding-top:40px;
+    height:220px;
+    .img{
+      width: 164px;
+      height:164px;
+      float:left;
+      img{
+        border:none;
+        width:100%;
+      }
+    }
+    .text{
+      font-family:"myfont";
+      margin-left:10px;
+      width:390px;
+      float:left;
+      font-size:40px;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      color:#2D2D2D;
+      .title{
+        padding-bottom:10px;
+        border-bottom:2px #ddbf9b solid;
+      }
+      .gateway{
+        font-size: 34px;
+        color:rgba(183,114,49,1);
+        font-family: Arial;
+        margin-top:10px;
+        letter-spacing: 0;
+      }
+    }
+    .login_apply{
+      float: right;
+      width:180px;
+      margin-top:45px;
+      a{
+        display: block;
+        text-decoration: none;
+        color:#333;
+        text-align: center;
+        line-height:50px;
+        font-family: Roboto;
+        font-size: 24px;
+        margin-bottom:6px;background:#fff;
+      }
+      a:hover{
+        background:red;
+        color:#fff;
+      }
+    }
+  }
+}
+
+.nav_active{
+  background-color:#b77231 !important;
+  color:#e3e3e3 !important;
+}
+.nav{
+  position: relative;
+  height:100px;
+  background:#ffffff;
+  width:100%;
+  .wrapper{
+    position: absolute;
+    left:-360px;
+    top:100px;
+    z-index:100;
+    width:360px;
+    a{
+      display:block;
+      color:#fff;
+      background:#000;
+      text-decoration: none;
+      width:100%;
+      text-align: center;
+      line-height: 105px;
+      font-family: "myfont2";
+      font-size: 28px;
+      //background:transparent;
+    }
+    .list{
+      display:none;
+      position: absolute;
+      top:44px;
+      left:142px;
+      width:136px;
+      z-index:10;
+      text-align: center;
+      background:#fff;
+      line-height: 30px;
+      font-family:myfont2;
+      font-size: 14px;
+      li:hover{
+        cursor:pointer;
+      }
+    }
+  }
+  .mobile_top{
+    display: block !important;
+    position: absolute;
+    line-height:100px;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    .mobile_nav{
+      float: left;
+      margin-left:4px;
+      width:100px;
+      height:100%;
+      background:url("../img/menu.jpg") no-repeat;
+    }
+    .mobile_name{
+      position:absolute;
+      width:330px;
+      left:50%;
+      margin-left:-165px;
+      font-size: 40px;
+      font-family: Roboto;
+      text-decoration: none;
+      color:#000;
+      text-align: center;
+    }
+  }
+}
+
+.container{
+  color:#666;
+  .wrapper{
+    position: relative;
+    padding:0 10px;
+    .con{
+      display:none;
+      margin-top:40px;
+      h1{
+        margin-bottom:20px;
+        color:#b77231;
+        font-weight: normal;
+        font-family: BoldRoboto;
+        font-size: 40px;
+      }
+    }
+    .con_contact{
+      overflow: hidden;
+      .left{
+        background:#fff;
+        padding:10px;
+        .img{
+          height:500px;
+          background:url("../img/contact_pic.jpg");
+          background-size:100%;
+        }
+      }
+      .right{
+        background:#fff;
+        padding:10px;
+
+        h2{
+          font-weight: normal;
+          font-family: BoldRoboto;
+          color:#b77231;
+          font-size: 34px;
+        }
+        p{
+          line-height:36px;
+          font-family: Roboto;
+          color:#666;
+          font-size: 28px;
+        }
+        h5{
+          font-weight: normal;
+          font-style: italic;
+          font-family: Roboto;
+          font-size: 24px;
+        }
+        .message{
+          padding:66px 24px 30px;
+          background:#cc9553;
+          margin-top:10px;
+          .line{
+            border:1px solid #e3e3e3;
+            height:0;
+          }
+          #connect{
+            overflow: hidden;
+            .form_left{
+              width:49%;
+              float: left;
+              input{
+                width:100%;
+                height:60px;
+                border:2px solid #e3e3e3;
+                margin-top:5px;
+                outline:none;
+                line-height: 26px\9;
+                float: left;
+                font-size: 28px;
+              }
+            }
+            .form_right{
+              width:49%;
+              float: right;
+              #message{
+                margin-top:5px;
+                border:2px solid #e3e3e3;
+                resize:none;
+                height:198px;
+                width:100%;
+                outline:none;
+                font-size: 28px;
+
+              }
+            }
+            .submit{
+              margin-top:10px;
+              input{
+                border:none;
+                background:#b77231;
+                width:150px;
+                height:70px;
+                color:#fff;
+                float: right;
+                cursor:pointer;
+                text-indent: 0;
+                font-size: 28px;
+              }
+            }
+          }
+          .return_info{
+            color:yellow;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  height:70px;
+  background:#fff;
+  color:#444444;
+  line-height: 70px;
+  text-align: center;
+  margin:200px 0 30px;
+  font-family: myfont2;
+  letter-spacing: 1px;
+  font-size: 23px;
+}
+.top_box{
+  display:none;
+}
+.top{
+  background:url("../img/arrowup.png") 3px -5px no-repeat #aaa;
+  display: none;
+  position:fixed;
+  right:30px;
+  bottom:30px;
+  width:80px;
+  height:80px;
+  cursor:pointer;
+}
+
+.top:hover{
+  background:url("../img/arrowup.png") 3px -5px no-repeat #666;
+}
+

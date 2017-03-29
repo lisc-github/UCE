@@ -1,0 +1,252 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/opensans-condlight-webfont.eot");
+  src: url("../font/OpenSans-CondLight.ttf") format("truetype"), url("../font/opensans-condlight-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-condlight-webfont.woff") format("woff"), url("../font/opensans-condlight-webfont.svg") format("svg"); }
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans-webfont.eot");
+  src: url("../font/openSans.ttf") format("truetype"), url("../font/opensans-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-webfont.woff") format("woff"), url("../font/opensans-webfont.svg") format("svg"); }
+@font-face {
+  font-family: Roboto;
+  src: url("../font/roboto-condensed-webfont.eot");
+  src: url("../font/Roboto-Condensed.ttf") format("truetype"), url("../font/roboto-condensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-condensed-webfont.woff") format("woff"), url("../font/roboto-condensed-webfont.svg") format("svg"); }
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/roboto-boldcondensed-webfont.eot");
+  src: url("../font/Roboto-BoldCondensed.ttf") format("truetype"), url("../font/roboto-boldcondensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-boldcondensed-webfont.woff") format("woff"), url("../font/roboto-boldcondensed-webfont.svg") format("svg"); }
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbb; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #777; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #777; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbb; }
+
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 9999px; }
+
+ul {
+  list-style: none; }
+
+body {
+  background: #e3e3e3; }
+
+.clear {
+  clear: both; }
+
+input {
+  background: #fff;
+  font-family: Roboto; }
+
+.placeholder {
+  color: #bbb; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  height: 200px; }
+  .header .wrapper {
+    padding-top: 40px;
+    height: 220px; }
+    .header .wrapper .img {
+      width: 100px;
+      height: 100px;
+      float: left; }
+      .header .wrapper .img img {
+        border: none; }
+    .header .wrapper .text {
+      font-family: "myfont";
+      margin-left: 4px;
+      width: 250px;
+      float: left;
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      color: #2D2D2D; }
+      .header .wrapper .text .title {
+        padding-bottom: 10px;
+        border-bottom: 2px #ddbf9b solid; }
+      .header .wrapper .text .gateway {
+        font-size: 18px;
+        color: #b77231;
+        font-family: Arial;
+        margin-top: 10px;
+        letter-spacing: 0; }
+
+.top_box {
+  float: right;
+  width: 530px;
+  margin-top: 40px; }
+  .top_box a {
+    padding: 8px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #cfa883;
+    text-align: center;
+    line-height: 30px;
+    font-family: Roboto;
+    border: 1px solid #cfa883;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+  .top_box a:hover {
+    background: #cfa883;
+    color: #fff; }
+
+.container {
+  font-family: Roboto;
+  margin-top: 40px; }
+  .container .content {
+    overflow: hidden;
+    width: 780px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 0;
+    -webkit-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.5); }
+    .container .content .img {
+      float: left;
+      width: 45%;
+      height: 500px;
+      background: url("../img/westlake4-2.jpg") -90px -30px no-repeat;
+      background: url("../img/westlake_4.JPG") no-repeat\9;
+      background-size: 600px; }
+    .container .content .sign {
+      width: 70%;
+      margin-left: 15%; }
+      .container .content .sign h2 {
+        margin-bottom: 40px;
+        font-family: BoldRoboto;
+        color: #b77231; }
+      .container .content .sign form .name .first_box {
+        width: 48%;
+        float: left; }
+      .container .content .sign form .name .last_box {
+        width: 48%;
+        float: right; }
+      .container .content .sign form .name input[type="text"] {
+        display: block;
+        width: 99%; }
+      .container .content .sign form input[type="text"], .container .content .sign form input[type="password"] {
+        font-size: 16px;
+        text-indent: 1em;
+        width: 99.4%;
+        height: 40px;
+        line-height: 40px\9;
+        border: 1px solid #ccc;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        outline: none; }
+      .container .content .sign form .submit {
+        width: 99.8%;
+        margin-top: 42px; }
+      .container .content .sign form p {
+        text-align: right; }
+        .container .content .sign form p a {
+          color: #666; }
+      .container .content .sign form .code {
+        width: 99.4%; }
+        .container .content .sign form .code .write_code {
+          width: 61.7%;
+          float: left; }
+          .container .content .sign form .code .write_code input[type="text"] {
+            width: 99%;
+            border: 1px solid #ccc;
+            -webkit-border-radius: 6px 6px 0 0;
+            -moz-border-radius: 6px 6px 0 0;
+            border-radius: 6px 0 0 6px; }
+        .container .content .sign form .code .get_code {
+          width: 38%;
+          float: right; }
+          .container .content .sign form .code .get_code input[type="button"] {
+            background: #ddd;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+            color: #777;
+            line-height: 40px;
+            height: 42px; }
+      .container .content .sign form div {
+        overflow: hidden;
+        height: 42px; }
+        .container .content .sign form div input {
+          float: left;
+          height: 40px;
+          background: #fff;
+          *line-height: 30px; }
+        .container .content .sign form div .sign {
+          width: 46%;
+          float: left;
+          color: #333;
+          height: 38px;
+          background: #fff;
+          line-height: 38px;
+          text-align: center;
+          text-decoration: none;
+          border: 1px solid #ccc; }
+        .container .content .sign form div input[type=submit] {
+          width: 46%;
+          float: right;
+          height: 40px;
+          background: #a01e08;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          border: none; }
+      .container .content .sign .return_info {
+        color: red; }
+
+.footer {
+  height: 50px;
+  background: #fff;
+  color: #444444;
+  line-height: 50px;
+  text-align: center;
+  margin: 150px 0 30px;
+  font-family: myfont2;
+  letter-spacing: 1px;
+  font-size: 13px; }
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    width: 980px; } }
+@media screen and (max-width: 980px) {
+  .footer {
+    width: 980px; } }
+.header .wrapper .logo {
+  overflow: hidden;
+  float: left; }
+
+.header .wrapper .logo .text {
+  height: 110px;
+  overflow: hidden; }
+
+.header .wrapper .top {
+  overflow: hidden;
+  float: left; }
+
+.header .wrapper .top_box {
+  height: 40px;
+  overflow: hidden; }
+
+.header .wrapper .top_box a {
+  line-height: 40px; }
+
+/*# sourceMappingURL=sign_up.css.map */

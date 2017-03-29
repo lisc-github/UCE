@@ -1,0 +1,355 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/opensans-condlight-webfont.eot");
+  src: url("../font/OpenSans-CondLight.ttf") format("truetype"), url("../font/opensans-condlight-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-condlight-webfont.woff") format("woff"), url("../font/opensans-condlight-webfont.svg") format("svg"); }
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans-webfont.eot");
+  src: url("../font/openSans.ttf") format("truetype"), url("../font/opensans-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-webfont.woff") format("woff"), url("../font/opensans-webfont.svg") format("svg"); }
+@font-face {
+  font-family: Roboto;
+  src: url("../font/roboto-condensed-webfont.eot");
+  src: url("../font/Roboto-Condensed.ttf") format("truetype"), url("../font/roboto-condensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-condensed-webfont.woff") format("woff"), url("../font/roboto-condensed-webfont.svg") format("svg"); }
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/roboto-boldcondensed-webfont.eot");
+  src: url("../font/Roboto-BoldCondensed.ttf") format("truetype"), url("../font/roboto-boldcondensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-boldcondensed-webfont.woff") format("woff"), url("../font/roboto-boldcondensed-webfont.svg") format("svg"); }
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 9999px; }
+
+ul {
+  list-style: none; }
+
+body {
+  background: #e3e3e3; }
+
+.clear {
+  clear: both; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  height: 200px; }
+  .header .wrapper {
+    padding-top: 40px;
+    height: 160px; }
+    .header .wrapper .logo {
+      overflow: hidden;
+      float: left; }
+      .header .wrapper .logo .img {
+        width: 100px;
+        height: 100px;
+        float: left; }
+        .header .wrapper .logo .img img {
+          border: none; }
+      .header .wrapper .logo .text {
+        font-family: "myfont";
+        margin-left: 4px;
+        width: 250px;
+        float: left;
+        font-size: 24px;
+        letter-spacing: 2px;
+        font-style: normal;
+        text-align: center;
+        color: #2D2D2D; }
+        .header .wrapper .logo .text .title {
+          padding-bottom: 10px;
+          border-bottom: 2px #ddbf9b solid; }
+        .header .wrapper .logo .text .gateway {
+          font-size: 18px;
+          color: #b77231;
+          font-family: Arial;
+          margin-top: 10px;
+          letter-spacing: 0; }
+    .header .wrapper .top_box {
+      float: right;
+      width: 530px;
+      margin-top: 40px; }
+      .header .wrapper .top_box a {
+        padding: 8px 20px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: #cfa883;
+        text-align: center;
+        line-height: 30px;
+        font-family: Roboto;
+        border: 1px solid #cfa883;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px; }
+      .header .wrapper .top_box a:hover {
+        background: #cfa883;
+        color: #fff; }
+
+.nav_active {
+  background-color: #cfa883 !important;
+  color: #e3e3e3 !important; }
+
+.nav {
+  height: 44px;
+  background: #b77231; }
+  .nav .wrapper {
+    position: relative; }
+    .nav .wrapper a {
+      display: inline-block;
+      text-decoration: none;
+      width: 16.667%;
+      color: #2D2D2D;
+      text-align: center;
+      line-height: 44px;
+      font-family: "myfont2";
+      font-size: 13px;
+      background: transparent; }
+    .nav .wrapper .list {
+      display: none;
+      position: absolute;
+      top: 44px;
+      left: 142px;
+      width: 136px;
+      z-index: 10;
+      text-align: center;
+      background: #fff;
+      line-height: 30px;
+      font-family: myfont2;
+      font-size: 14px; }
+      .nav .wrapper .list li:hover {
+        cursor: pointer; }
+
+.container {
+  font-family: "Roboto";
+  color: #666; }
+  .container .con {
+    display: none; }
+    .container .con .title {
+      width: 1080px;
+      margin: 40px auto 20px;
+      font-size: 16px; }
+  .container .con_home {
+    width: 1100px;
+    overflow: hidden;
+    margin: 20px auto; }
+    .container .con_home .homes {
+      width: 21.9%;
+      *width: 21.869%;
+      padding: 0.8%;
+      float: left;
+      margin-right: 2%;
+      background: #fff; }
+      .container .con_home .homes .view1 {
+        margin-bottom: 6px; }
+      .container .con_home .homes .view2 {
+        margin-top: 6px; }
+      .container .con_home .homes .view {
+        height: 130px;
+        background: #cc9553;
+        color: #f1f1f1;
+        padding: 16px 11px; }
+        .container .con_home .homes .view h4 {
+          font-family: BoldRoboto;
+          font-size: 17px;
+          margin-bottom: 6px;
+          font-weight: normal;
+          font-size: 16px\9;
+          font-weight: bold\9; }
+        .container .con_home .homes .view p {
+          font-size: 14px;
+          line-height: 17px; }
+      .container .con_home .homes .img {
+        position: relative; }
+        .container .con_home .homes .img img {
+          width: 100%;
+          display: block; }
+        .container .con_home .homes .img .border {
+          width: 94%;
+          height: 97%;
+          border: 2px solid #e3e3e3;
+          position: absolute;
+          top: 1.0%;
+          left: 2%; }
+        .container .con_home .homes .img .square {
+          width: 40px;
+          height: 40px;
+          background: url("../img/square.png");
+          position: absolute; }
+        .container .con_home .homes .img .square1 {
+          top: -13px;
+          left: 12px; }
+        .container .con_home .homes .img .square2 {
+          bottom: -15px;
+          right: 12px; }
+    .container .con_home .clear {
+      clear: both; }
+    .container .con_home .introduce {
+      clear: both;
+      margin: 20px 0 20px;
+      background: #fff;
+      padding: 0.8%;
+      overflow: hidden; }
+      .container .con_home .introduce .left {
+        width: 22.24%;
+        height: 200px;
+        background: url("../img/about_uce.jpg");
+        background-position-y: -30px;
+        float: left;
+        position: relative; }
+        .container .con_home .introduce .left span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -23px;
+          margin-top: -24px;
+          text-align: center; }
+      .container .con_home .introduce .right {
+        float: left;
+        width: 76.96%;
+        font-size: 14px;
+        margin-left: 0.8%;
+        position: relative; }
+        .container .con_home .introduce .right .text {
+          background: #e3e3e3;
+          height: 170px;
+          padding: 15px 18px;
+          overflow: hidden; }
+          .container .con_home .introduce .right .text p {
+            margin-bottom: 10px;
+            line-height: 17px; }
+        .container .con_home .introduce .right .border {
+          height: 94%;
+          width: 98.4%;
+          border: 2px solid #e3e3e3;
+          position: absolute;
+          top: 2%;
+          left: 0.5%; }
+        .container .con_home .introduce .right .square {
+          width: 40px;
+          height: 40px;
+          background: url("../img/square.png");
+          position: absolute;
+          top: 12px;
+          left: -29px; }
+    .container .con_home .testimonial {
+      margin-top: 20px;
+      padding: 0.8%;
+      background: #fff;
+      overflow: hidden; }
+      .container .con_home .testimonial .content {
+        font-size: 15px;
+        float: left;
+        height: 190px;
+        background: #ccc;
+        width: 83.2%;
+        position: relative; }
+        .container .con_home .testimonial .content p {
+          padding: 10px;
+          line-height: 20px; }
+        .container .con_home .testimonial .content .border {
+          position: absolute;
+          width: 98.8%;
+          height: 180px;
+          border: 2px solid #e3e3e3;
+          top: 3px;
+          left: 0.3%; }
+        .container .con_home .testimonial .content .square {
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          background: #fff;
+          top: 12px;
+          right: -16px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg); }
+      .container .con_home .testimonial .img {
+        float: right;
+        width: 16%;
+        height: 190px;
+        overflow: hidden;
+        background: url("../img/Teach_Layout_18.gif"); }
+    .container .con_home .home_4 {
+      margin-right: 0; }
+
+.footer {
+  height: 50px;
+  background: #fff;
+  color: #444444;
+  line-height: 50px;
+  text-align: center;
+  margin: 200px 0 30px;
+  font-family: myfont2;
+  letter-spacing: 1px;
+  font-size: 13px; }
+
+.top {
+  background: url("../img/arrowup.png") 3px -5px no-repeat #aaa;
+  display: none;
+  position: fixed;
+  right: 80px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer; }
+
+.top:hover {
+  background: url("../img/arrowup.png") 3px -5px no-repeat #666; }
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    width: 960px; }
+
+  .container .wrapper {
+    width: 960px; }
+
+  .container .wrapper .title {
+    width: 960px; }
+
+  .container .con_home {
+    width: 900px; }
+
+  .top {
+    right: 20px; }
+
+  .container .con_home .introduce .right .text {
+    height: 200px; }
+
+  .container .con_home .introduce .left {
+    height: 230px;
+    background-position-x: -20px;
+    background-position-y: 0; }
+
+  .container .con_home .homes .view {
+    height: 150px; } }
+@media screen and (max-width: 980px) {
+  .banner {
+    width: 980px; }
+
+  .nav, .footer {
+    width: 980px; }
+
+  .container .con .main {
+    width: 980px; } }
+.header .wrapper .logo {
+  overflow: hidden;
+  float: left; }
+
+.header .wrapper .logo .text {
+  height: 110px;
+  overflow: hidden; }
+
+.header .wrapper .top {
+  overflow: hidden;
+  float: left; }
+
+.header .wrapper .top_box {
+  height: 40px;
+  overflow: hidden; }
+
+.header .wrapper .top_box a {
+  line-height: 40px; }
+
+/*# sourceMappingURL=uce_home.css.map */

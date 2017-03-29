@@ -1,0 +1,128 @@
+.container {
+  font-family: "Roboto";
+  color: #666;
+  padding: 0 10px;
+  .con {
+    display: none;
+    .title {
+      width: 1080px;
+      margin: 40px auto 20px;
+      font-size: 16px;
+    }
+  }
+  .con_home {
+    overflow: hidden;
+    margin: 20px auto;
+    .homes {
+      width: 47.4%;
+      *width: 21.869%;
+      padding: 0.8%;
+      float: left;
+      margin: 0 2% 20px 0;
+      background: #fff;
+      .view1 {
+        margin-bottom: 6px;
+      }
+      .view2 {
+        margin-top: 6px;
+      }
+      .view {
+        height: 262px;
+        background: #cc9553;
+        color: #f1f1f1;
+        padding: 16px 11px;
+        h4 {
+          font-family: BoldRoboto;
+          font-size: 35px;
+          margin-bottom: 6px;
+          font-weight: normal;
+          font-size: 16px \9
+        ;
+          font-weight: bold \9
+        ;
+        }
+        p {
+          font-size: 28px;
+          line-height: 37px;
+        }
+      }
+      .img {
+        position: relative;
+        img {
+          width: 100%;
+          display: block;
+        }
+        .border {
+          width: 95%;
+          height: 97%;
+          border: 2px solid #e3e3e3;
+          position: absolute;
+          top: 1.0%;
+          left: 2%;
+        }
+        .square {
+          width: 40px;
+          height: 40px;
+          background: url("../img/square.png");
+          position: absolute;
+        }
+        .square1 {
+          top: -13px;
+          left: 12px;
+        }
+        .square2 {
+          bottom: -15px;
+          right: 12px;
+        }
+      }
+    }
+    .home_2 {
+      margin-right: 0;
+    }
+    .clear {
+      clear: both;
+    }
+    .introduce {
+      clear: both;
+      //width:93.8%;
+      margin: 20px 0 20px;
+      background: #fff;
+      padding: 0.8%;
+      overflow: hidden;
+      .left {
+        //width:22.24%;
+        height: 450px;
+        background: url("../photo_gallery/50.jpg") -7px -56px no-repeat;
+        background-size: 118%;
+        position: relative;
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -23px;
+          margin-top: -24px;
+          text-align: center;
+        }
+      }
+      .right {
+        position: relative;
+        .text {
+          background: #e3e3e3;
+          height: 676px;
+          padding: 15px 18px;
+          overflow: hidden;
+          p {
+            margin-bottom: 10px;
+            line-height: 44px;
+            font-size: 34px;
+          }
+        }
+      }
+    }
+    .home_4 {
+      margin-right: 0;
+    }
+  }
+}
+
+

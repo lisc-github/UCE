@@ -1,0 +1,522 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/opensans-condlight-webfont.eot");
+  src: url("../font/OpenSans-CondLight.ttf") format("truetype"), url("../font/opensans-condlight-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-condlight-webfont.woff") format("woff"), url("../font/opensans-condlight-webfont.svg") format("svg"); }
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans-webfont.eot");
+  src: url("../font/openSans.ttf") format("truetype"), url("../font/opensans-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-webfont.woff") format("woff"), url("../font/opensans-webfont.svg") format("svg"); }
+@font-face {
+  font-family: Roboto;
+  src: url("../font/roboto-condensed-webfont.eot");
+  src: url("../font/Roboto-Condensed.ttf") format("truetype"), url("../font/roboto-condensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-condensed-webfont.woff") format("woff"), url("../font/roboto-condensed-webfont.svg") format("svg"); }
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/roboto-boldcondensed-webfont.eot");
+  src: url("../font/Roboto-BoldCondensed.ttf") format("truetype"), url("../font/roboto-boldcondensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-boldcondensed-webfont.woff") format("woff"), url("../font/roboto-boldcondensed-webfont.svg") format("svg"); }
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 9999px; }
+
+ul {
+  list-style: none; }
+
+body {
+  background: #e3e3e3; }
+
+.clear {
+  clear: both; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  height: 200px; }
+  .header .wrapper {
+    padding-top: 40px;
+    height: 220px; }
+    .header .wrapper .img {
+      width: 100px;
+      height: 100px;
+      float: left; }
+      .header .wrapper .img img {
+        border: none; }
+    .header .wrapper .text {
+      font-family: "myfont";
+      margin-left: 4px;
+      width: 250px;
+      float: left;
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      color: #2D2D2D; }
+      .header .wrapper .text .title {
+        padding-bottom: 10px;
+        border-bottom: 2px #ddbf9b solid; }
+      .header .wrapper .text .gateway {
+        font-size: 18px;
+        color: #b77231;
+        font-family: Arial;
+        margin-top: 10px;
+        letter-spacing: 0; }
+    .header .wrapper .login_apply {
+      float: right;
+      width: 120px;
+      margin-top: 30px; }
+      .header .wrapper .login_apply a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+        line-height: 30px;
+        font-family: Roboto;
+        margin-bottom: 6px;
+        background: #fff; }
+      .header .wrapper .login_apply a:hover {
+        background: red;
+        color: #fff; }
+
+.choose {
+  background: #ccc !important;
+  color: #fff !important; }
+
+.nav_active {
+  background-color: #cfa883 !important;
+  color: #e3e3e3 !important; }
+
+.nav {
+  height: 44px;
+  background: #b77231; }
+  .nav .wrapper {
+    position: relative; }
+    .nav .wrapper a {
+      display: inline-block;
+      text-decoration: none;
+      width: 16.667%;
+      color: #2D2D2D;
+      text-align: center;
+      line-height: 44px;
+      font-family: "myfont2";
+      font-size: 13px;
+      background: transparent; }
+    .nav .wrapper .list {
+      display: none;
+      position: absolute;
+      top: 44px;
+      left: 142px;
+      width: 136px;
+      z-index: 10;
+      text-align: center;
+      background: #fff;
+      line-height: 30px;
+      font-family: myfont2;
+      font-size: 14px; }
+      .nav .wrapper .list li:hover {
+        cursor: pointer; }
+
+.top_box {
+  float: right;
+  width: 530px;
+  margin-top: 40px;
+  overflow: hidden; }
+  .top_box a {
+    padding: 8px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #cfa883;
+    text-align: center;
+    line-height: 40px;
+    font-family: Roboto;
+    border: 1px solid #cfa883;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+  .top_box a:hover {
+    background: #cfa883;
+    color: #fff; }
+
+.container {
+  font-family: Roboto;
+  color: #666; }
+  .container h1, .container h2, .container h3 {
+    font-family: BoldRoboto; }
+  .container .con {
+    display: none; }
+    .container .con .banner {
+      height: 440px;
+      padding-top: 1px;
+      position: relative;
+      background: url("../img/westlake3.jpg") 0 -200px no-repeat; }
+      .container .con .banner .text {
+        width: 1000px;
+        margin: 40px auto; }
+        .container .con .banner .text h1 {
+          color: #fff;
+          font-weight: bold;
+          text-align: center;
+          font-size: 36px; }
+        .container .con .banner .text p {
+          color: #fff;
+          font-size: 15px; }
+      .container .con .banner .pos_nav {
+        z-index: 10;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        margin-left: -324px;
+        bottom: -25px;
+        box-shadow: #ccc 0 0 22px; }
+        .container .con .banner .pos_nav a {
+          font-family: BoldRoboto;
+          font-size: 16px;
+          float: left;
+          height: 50px;
+          background: #fff;
+          line-height: 50px;
+          border-right: 1px solid #ccc;
+          padding: 0 19px;
+          text-decoration: none;
+          text-align: center;
+          color: #666; }
+        .container .con .banner .pos_nav a:hover {
+          background: #cfa883;
+          color: #fff; }
+        .container .con .banner .pos_nav .apply {
+          background: #caca17;
+          color: #fff; }
+        .container .con .banner .pos_nav .apply:hover {
+          background: #caca17; }
+    .container .con .main {
+      width: 100%;
+      overflow: hidden; }
+      .container .con .main .boxes {
+        overflow: hidden;
+        width: 400%; }
+        .container .con .main .boxes .teaching_English, .container .con .main .boxes .position, .container .con .main .boxes .sabbatical, .container .con .main .boxes .apply {
+          float: left;
+          width: 25%; }
+          .container .con .main .boxes .teaching_English h1, .container .con .main .boxes .position h1, .container .con .main .boxes .sabbatical h1, .container .con .main .boxes .apply h1 {
+            width: 1000px;
+            margin: 60px auto 30px;
+            color: #b77231; }
+          .container .con .main .boxes .teaching_English .box, .container .con .main .boxes .position .box, .container .con .main .boxes .sabbatical .box, .container .con .main .boxes .apply .box {
+            width: 1000px;
+            margin: 0 auto 20px;
+            overflow: hidden; }
+            .container .con .main .boxes .teaching_English .box .img, .container .con .main .boxes .position .box .img, .container .con .main .boxes .sabbatical .box .img, .container .con .main .boxes .apply .box .img {
+              float: left;
+              width: 40%;
+              height: 240px;
+              overflow: hidden; }
+              .container .con .main .boxes .teaching_English .box .img img, .container .con .main .boxes .position .box .img img, .container .con .main .boxes .sabbatical .box .img img, .container .con .main .boxes .apply .box .img img {
+                width: 100%; }
+            .container .con .main .boxes .teaching_English .box .detail, .container .con .main .boxes .position .box .detail, .container .con .main .boxes .sabbatical .box .detail, .container .con .main .boxes .apply .box .detail {
+              font-size: 15px;
+              float: right;
+              width: 58%;
+              line-height: 30px; }
+            .container .con .main .boxes .teaching_English .box .img2, .container .con .main .boxes .position .box .img2, .container .con .main .boxes .sabbatical .box .img2, .container .con .main .boxes .apply .box .img2 {
+              float: right;
+              width: 40%;
+              height: 240px;
+              overflow: hidden; }
+              .container .con .main .boxes .teaching_English .box .img2 img, .container .con .main .boxes .position .box .img2 img, .container .con .main .boxes .sabbatical .box .img2 img, .container .con .main .boxes .apply .box .img2 img {
+                width: 100%; }
+            .container .con .main .boxes .teaching_English .box .detail2, .container .con .main .boxes .position .box .detail2, .container .con .main .boxes .sabbatical .box .detail2, .container .con .main .boxes .apply .box .detail2 {
+              font-size: 15px;
+              float: left;
+              width: 58%;
+              line-height: 30px; }
+          .container .con .main .boxes .teaching_English .warning, .container .con .main .boxes .position .warning, .container .con .main .boxes .sabbatical .warning, .container .con .main .boxes .apply .warning {
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 15px;
+            font-style: italic; }
+          .container .con .main .boxes .teaching_English .guide, .container .con .main .boxes .position .guide, .container .con .main .boxes .sabbatical .guide, .container .con .main .boxes .apply .guide {
+            font-size: 15px;
+            width: 1000px;
+            margin: 20px auto;
+            color: red; }
+          .container .con .main .boxes .teaching_English .tab, .container .con .main .boxes .position .tab, .container .con .main .boxes .sabbatical .tab, .container .con .main .boxes .apply .tab {
+            width: 1000px;
+            margin: 0 auto 60px; }
+            .container .con .main .boxes .teaching_English .tab table, .container .con .main .boxes .position .tab table, .container .con .main .boxes .sabbatical .tab table, .container .con .main .boxes .apply .tab table {
+              border-collapse: collapse;
+              width: 100%; }
+          .container .con .main .boxes .teaching_English .process, .container .con .main .boxes .position .process, .container .con .main .boxes .sabbatical .process, .container .con .main .boxes .apply .process {
+            padding: 10px;
+            margin-top: 60px; }
+            .container .con .main .boxes .teaching_English .process .box, .container .con .main .boxes .position .process .box, .container .con .main .boxes .sabbatical .process .box, .container .con .main .boxes .apply .process .box {
+              width: 1000px;
+              margin: 0 auto;
+              overflow: hidden; }
+              .container .con .main .boxes .teaching_English .process .box h3, .container .con .main .boxes .position .process .box h3, .container .con .main .boxes .sabbatical .process .box h3, .container .con .main .boxes .apply .process .box h3 {
+                margin-bottom: 12px;
+                font-size: 22px; }
+              .container .con .main .boxes .teaching_English .process .box p, .container .con .main .boxes .position .process .box p, .container .con .main .boxes .sabbatical .process .box p, .container .con .main .boxes .apply .process .box p {
+                line-height: 24px; }
+              .container .con .main .boxes .teaching_English .process .box .decoration, .container .con .main .boxes .position .process .box .decoration, .container .con .main .boxes .sabbatical .process .box .decoration, .container .con .main .boxes .apply .process .box .decoration {
+                text-decoration: underline; }
+              .container .con .main .boxes .teaching_English .process .box ul, .container .con .main .boxes .position .process .box ul, .container .con .main .boxes .sabbatical .process .box ul, .container .con .main .boxes .apply .process .box ul {
+                margin-left: 30px; }
+                .container .con .main .boxes .teaching_English .process .box ul li, .container .con .main .boxes .position .process .box ul li, .container .con .main .boxes .sabbatical .process .box ul li, .container .con .main .boxes .apply .process .box ul li {
+                  line-height: 30px;
+                  height: 30px; }
+                  .container .con .main .boxes .teaching_English .process .box ul li span, .container .con .main .boxes .position .process .box ul li span, .container .con .main .boxes .sabbatical .process .box ul li span, .container .con .main .boxes .apply .process .box ul li span {
+                    font-family: BoldRoboto;
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 30px;
+                    height: 30px;
+                    line-height: 26px;
+                    vertical-align: top; }
+        .container .con .main .boxes .teaching_English .border, .container .con .main .boxes .position .border, .container .con .main .boxes .sabbatical .border {
+          height: 100%;
+          border-right: 1px solid #ccc; }
+        .container .con .main .boxes .teaching_English .tab, .container .con .main .boxes .position .tab, .container .con .main .boxes .sabbatical .tab {
+          width: 1000px;
+          margin: 0 auto;
+          background: #fff;
+          overflow: hidden; }
+          .container .con .main .boxes .teaching_English .tab h2, .container .con .main .boxes .position .tab h2, .container .con .main .boxes .sabbatical .tab h2 {
+            margin: 0 0 10px 0;
+            background: #aaa;
+            color: #fff;
+            line-height: 40px;
+            padding: 10px;
+            text-align: center; }
+          .container .con .main .boxes .teaching_English .tab p, .container .con .main .boxes .teaching_English .tab h3, .container .con .main .boxes .position .tab p, .container .con .main .boxes .position .tab h3, .container .con .main .boxes .sabbatical .tab p, .container .con .main .boxes .sabbatical .tab h3 {
+            font-size: 14px;
+            padding: 0 22px; }
+          .container .con .main .boxes .teaching_English .tab p, .container .con .main .boxes .position .tab p, .container .con .main .boxes .sabbatical .tab p {
+            line-height: 24px; }
+            .container .con .main .boxes .teaching_English .tab p span, .container .con .main .boxes .position .tab p span, .container .con .main .boxes .sabbatical .tab p span {
+              margin-right: 10px;
+              font-size: 24px; }
+          .container .con .main .boxes .teaching_English .tab h3, .container .con .main .boxes .position .tab h3, .container .con .main .boxes .sabbatical .tab h3 {
+            line-height: 24px;
+            font-family: BoldRoboto; }
+          .container .con .main .boxes .teaching_English .tab .country, .container .con .main .boxes .position .tab .country, .container .con .main .boxes .sabbatical .tab .country {
+            float: left;
+            width: 16%;
+            text-align: center; }
+          .container .con .main .boxes .teaching_English .tab .type, .container .con .main .boxes .position .tab .type, .container .con .main .boxes .sabbatical .tab .type {
+            float: left;
+            width: 25%; }
+          .container .con .main .boxes .teaching_English .tab .length, .container .con .main .boxes .position .tab .length, .container .con .main .boxes .sabbatical .tab .length {
+            float: left;
+            width: 25%; }
+          .container .con .main .boxes .teaching_English .tab .category, .container .con .main .boxes .position .tab .category, .container .con .main .boxes .sabbatical .tab .category {
+            float: left;
+            width: 34%; }
+        .container .con .main .boxes .teaching_English .tab2, .container .con .main .boxes .position .tab2, .container .con .main .boxes .sabbatical .tab2 {
+          width: 1000px;
+          margin: 30px auto 0;
+          background: #fff;
+          overflow: hidden; }
+          .container .con .main .boxes .teaching_English .tab2 h2, .container .con .main .boxes .position .tab2 h2, .container .con .main .boxes .sabbatical .tab2 h2 {
+            margin: 0 0 10px 0;
+            background: #aaa;
+            color: #fff;
+            line-height: 40px; }
+          .container .con .main .boxes .teaching_English .tab2 .salary, .container .con .main .boxes .position .tab2 .salary, .container .con .main .boxes .sabbatical .tab2 .salary {
+            float: left;
+            width: 36%; }
+          .container .con .main .boxes .teaching_English .tab2 .fee, .container .con .main .boxes .position .tab2 .fee, .container .con .main .boxes .sabbatical .tab2 .fee {
+            float: left;
+            width: 28%; }
+          .container .con .main .boxes .teaching_English .tab2 .qualifications, .container .con .main .boxes .position .tab2 .qualifications, .container .con .main .boxes .sabbatical .tab2 .qualifications {
+            float: left;
+            width: 36%; }
+        .container .con .main .boxes .position, .container .con .main .boxes .sabbatical, .container .con .main .boxes .apply {
+          display: none; }
+        .container .con .main .boxes .teaching_English .tab .country {
+          height: 260px; }
+        .container .con .main .boxes .teaching_English .tab .type {
+          height: 260px; }
+        .container .con .main .boxes .teaching_English .tab .length {
+          height: 260px; }
+        .container .con .main .boxes .teaching_English .tab .category {
+          height: 260px; }
+        .container .con .main .boxes .teaching_English .tab .salary {
+          height: 655px; }
+        .container .con .main .boxes .teaching_English .tab .fee {
+          height: 655px; }
+        .container .con .main .boxes .teaching_English .tab .qualifications {
+          height: 655px; }
+        .container .con .main .boxes .position .tab .country {
+          height: 424px; }
+        .container .con .main .boxes .position .tab .type {
+          height: 424px; }
+        .container .con .main .boxes .position .tab .length {
+          height: 424px; }
+        .container .con .main .boxes .position .tab .category {
+          height: 424px; }
+        .container .con .main .boxes .position .tab .salary {
+          height: 466px; }
+        .container .con .main .boxes .position .tab .fee {
+          height: 466px; }
+        .container .con .main .boxes .position .tab .qualifications {
+          height: 466px; }
+        .container .con .main .boxes .sabbatical .tab .country {
+          height: 320px; }
+        .container .con .main .boxes .sabbatical .tab .type {
+          height: 320px; }
+        .container .con .main .boxes .sabbatical .tab .length {
+          height: 320px; }
+        .container .con .main .boxes .sabbatical .tab .category {
+          height: 320px; }
+        .container .con .main .boxes .sabbatical .tab .salary {
+          height: 348px; }
+        .container .con .main .boxes .sabbatical .tab .fee {
+          height: 348px; }
+        .container .con .main .boxes .sabbatical .tab .qualifications {
+          height: 348px; }
+
+.footer {
+  height: 50px;
+  background: #fff;
+  color: #444444;
+  line-height: 50px;
+  text-align: center;
+  margin: 200px 0 30px;
+  font-family: myfont2;
+  letter-spacing: 1px;
+  font-size: 13px; }
+
+.top {
+  background: url("../img/arrowup.png") 3px -5px no-repeat #aaa;
+  display: none;
+  position: fixed;
+  right: 80px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer; }
+
+.top:hover {
+  background: url("../img/arrowup.png") 3px -5px no-repeat #666; }
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    width: 960px; }
+
+  .container .con .banner .text {
+    width: 860px; }
+
+  .container .con .main .boxes .programs .box {
+    width: 900px;
+    font-size: 16px; }
+
+  .container .con .main .boxes .programs .box .detail {
+    line-height: 24px; }
+
+  .container .con .main .boxes .programs .box .detail2 {
+    line-height: 22px; }
+
+  .container .con .main .boxes .programs h1 {
+    width: 900px; }
+
+  .container .con .main .boxes .programs .warning {
+    width: 900px; }
+
+  .container .con .main .boxes .programs .guide {
+    width: 900px; }
+
+  .container .con .main .boxes .programs .tab {
+    width: 900px; }
+
+  .container .con .main .boxes .programs .process .box {
+    width: 900px; }
+
+  .top {
+    right: 20px; } }
+@media screen and (max-width: 980px) {
+  .banner {
+    width: 980px; }
+
+  .nav, .footer {
+    width: 980px; }
+
+  .container .con .main {
+    width: 980px; } }
+.header .wrapper .logo {
+  overflow: hidden;
+  float: left; }
+
+.header .wrapper .logo .text {
+  height: 110px;
+  overflow: hidden; }
+
+.header .wrapper .top {
+  overflow: hidden;
+  float: left; }
+
+.header .wrapper .top_box {
+  height: 40px;
+  overflow: hidden; }
+
+.header .wrapper .top_box a {
+  line-height: 40px; }
+
+.tab {
+  width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden; }
+  .tab h2 {
+    margin: 0 0 10px 0;
+    background: #aaa;
+    color: #fff;
+    line-height: 40px;
+    padding: 10px;
+    text-align: center; }
+  .tab p, .tab h3 {
+    font-size: 14px;
+    padding: 0 22px; }
+  .tab p {
+    line-height: 24px; }
+    .tab p span {
+      margin-right: 10px;
+      font-size: 24px; }
+  .tab h3 {
+    line-height: 24px;
+    font-family: BoldRoboto; }
+  .tab .country {
+    float: left;
+    width: 16%;
+    text-align: center; }
+  .tab .type {
+    float: left;
+    width: 25%; }
+  .tab .length {
+    float: left;
+    width: 25%; }
+  .tab .category {
+    float: left;
+    width: 34%; }
+
+.tab2 {
+  width: 1000px;
+  margin: 30px auto 0;
+  background: #fff;
+  overflow: hidden; }
+  .tab2 h2 {
+    margin: 0 0 10px 0;
+    background: #aaa;
+    color: #fff;
+    line-height: 40px; }
+  .tab2 .salary {
+    float: left;
+    width: 36%; }
+  .tab2 .fee {
+    float: left;
+    width: 28%; }
+  .tab2 .qualifications {
+    float: left;
+    width: 36%; }
+
+/*# sourceMappingURL=teach.css.map */

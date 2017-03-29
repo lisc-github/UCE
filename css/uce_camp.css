@@ -1,0 +1,375 @@
+@font-face {
+  font-family: myfont;
+  src: url("../font/opensans-condlight-webfont.eot");
+  src: url("../font/OpenSans-CondLight.ttf") format("truetype"), url("../font/opensans-condlight-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-condlight-webfont.woff") format("woff"), url("../font/opensans-condlight-webfont.svg") format("svg"); }
+@font-face {
+  font-family: myfont2;
+  src: url("../font/opensans-webfont.eot");
+  src: url("../font/openSans.ttf") format("truetype"), url("../font/opensans-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/opensans-webfont.woff") format("woff"), url("../font/opensans-webfont.svg") format("svg"); }
+@font-face {
+  font-family: Roboto;
+  src: url("../font/roboto-condensed-webfont.eot");
+  src: url("../font/Roboto-Condensed.ttf") format("truetype"), url("../font/roboto-condensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-condensed-webfont.woff") format("woff"), url("../font/roboto-condensed-webfont.svg") format("svg"); }
+@font-face {
+  font-family: BoldRoboto;
+  src: url("../font/roboto-boldcondensed-webfont.eot");
+  src: url("../font/Roboto-BoldCondensed.ttf") format("truetype"), url("../font/roboto-boldcondensed-webfont.eot?#iefix'") format("embedded-opentype"), url("../font/roboto-boldcondensed-webfont.woff") format("woff"), url("../font/roboto-boldcondensed-webfont.svg") format("svg"); }
+* {
+  margin: 0;
+  padding: 0;
+  max-height: 9999px; }
+
+ul {
+  list-style: none; }
+
+body {
+  background: #e3e3e3; }
+
+.clear {
+  clear: both; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+
+th, h1, h2, h3 {
+  font-family: BoldRoboto; }
+
+.header {
+  height: 200px; }
+  .header .wrapper {
+    padding-top: 40px;
+    height: 220px; }
+    .header .wrapper .img {
+      width: 100px;
+      height: 100px;
+      float: left; }
+      .header .wrapper .img img {
+        border: none; }
+    .header .wrapper .text {
+      font-family: "myfont";
+      margin-left: 4px;
+      width: 250px;
+      float: left;
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      color: #2D2D2D; }
+      .header .wrapper .text .title {
+        padding-bottom: 10px;
+        border-bottom: 2px #ddbf9b solid; }
+      .header .wrapper .text .gateway {
+        font-size: 18px;
+        color: #b77231;
+        font-family: Arial;
+        margin-top: 10px;
+        letter-spacing: 0; }
+    .header .wrapper .login_apply {
+      float: right;
+      width: 120px;
+      margin-top: 30px; }
+      .header .wrapper .login_apply a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+        line-height: 30px;
+        font-family: Roboto;
+        margin-bottom: 6px;
+        background: #fff; }
+      .header .wrapper .login_apply a:hover {
+        background: red;
+        color: #fff; }
+
+.nav_active {
+  background-color: #cfa883 !important;
+  color: #e3e3e3 !important; }
+
+.nav {
+  height: 44px;
+  background: #b77231; }
+  .nav .wrapper {
+    position: relative; }
+    .nav .wrapper a {
+      display: inline-block;
+      text-decoration: none;
+      width: 16.667%;
+      color: #2D2D2D;
+      text-align: center;
+      line-height: 44px;
+      font-family: "myfont2";
+      font-size: 13px;
+      background: transparent; }
+    .nav .wrapper .list {
+      display: none;
+      position: absolute;
+      top: 44px;
+      left: 142px;
+      width: 136px;
+      z-index: 10;
+      text-align: center;
+      background: #fff;
+      line-height: 30px;
+      font-family: myfont2;
+      font-size: 14px; }
+      .nav .wrapper .list li:hover {
+        cursor: pointer; }
+
+.top_box {
+  float: right;
+  width: 530px;
+  margin-top: 40px; }
+  .top_box a {
+    padding: 8px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #cfa883;
+    text-align: center;
+    line-height: 30px;
+    font-family: Roboto;
+    border: 1px solid #cfa883;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+  .top_box a:hover {
+    background: #cfa883;
+    color: #fff; }
+
+.container {
+  color: #666; }
+  .container .con {
+    display: none; }
+    .container .con .banner {
+      height: 440px;
+      background: url("../img/westlake2.jpg") no-repeat -100px -20px;
+      position: relative;
+      padding-top: 1px; }
+      .container .con .banner .text {
+        width: 1000px;
+        margin: 40px auto; }
+        .container .con .banner .text h1 {
+          color: #fff;
+          font-weight: bold;
+          text-align: center;
+          font-size: 36px; }
+        .container .con .banner .text p {
+          font-family: Roboto;
+          color: #fff;
+          font-size: 15px; }
+      .container .con .banner .pos_nav {
+        z-index: 10;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        margin-left: -246px;
+        bottom: -25px;
+        box-shadow: #ccc 0 0 22px; }
+        .container .con .banner .pos_nav a {
+          font-size: 14px;
+          float: left;
+          height: 50px;
+          background: #fff;
+          line-height: 50px;
+          border-right: 1px solid #ccc;
+          padding: 0 19px;
+          text-decoration: none;
+          text-align: center;
+          color: #666;
+          font-family: BoldRoboto; }
+        .container .con .banner .pos_nav a:hover {
+          background: #cfa883;
+          color: #fff; }
+        .container .con .banner .pos_nav .apply {
+          background: #caca17;
+          color: #fff; }
+        .container .con .banner .pos_nav .apply:hover {
+          background: #caca17; }
+    .container .con .main {
+      width: 100%;
+      overflow: hidden; }
+      .container .con .main .boxes {
+        overflow: hidden;
+        width: 400%; }
+        .container .con .main .boxes .qualification, .container .con .main .boxes .calendar, .container .con .main .boxes .apply {
+          display: none; }
+        .container .con .main .boxes .fee, .container .con .main .boxes .qualification, .container .con .main .boxes .calendar, .container .con .main .boxes .apply {
+          float: left;
+          width: 25%;
+          overflow: hidden;
+          top: 0;
+          left: 0;
+          padding: 60px 0; }
+          .container .con .main .boxes .fee .box, .container .con .main .boxes .qualification .box, .container .con .main .boxes .calendar .box, .container .con .main .boxes .apply .box {
+            width: 1000px;
+            margin: 0 auto; }
+            .container .con .main .boxes .fee .box h1, .container .con .main .boxes .qualification .box h1, .container .con .main .boxes .calendar .box h1, .container .con .main .boxes .apply .box h1 {
+              margin-bottom: 20px;
+              color: #b77231;
+              font-weight: normal; }
+            .container .con .main .boxes .fee .box p, .container .con .main .boxes .qualification .box p, .container .con .main .boxes .calendar .box p, .container .con .main .boxes .apply .box p {
+              margin: 20px 0;
+              font-size: 15px;
+              font-family: Roboto; }
+            .container .con .main .boxes .fee .box ul, .container .con .main .boxes .qualification .box ul, .container .con .main .boxes .calendar .box ul, .container .con .main .boxes .apply .box ul {
+              list-style: disc;
+              margin: 20px 0 0 30px; }
+              .container .con .main .boxes .fee .box ul li, .container .con .main .boxes .qualification .box ul li, .container .con .main .boxes .calendar .box ul li, .container .con .main .boxes .apply .box ul li {
+                font-size: 14px;
+                font-family: Roboto;
+                line-height: 24px; }
+              .container .con .main .boxes .fee .box ul span, .container .con .main .boxes .qualification .box ul span, .container .con .main .boxes .calendar .box ul span, .container .con .main .boxes .apply .box ul span {
+                font-weight: bolder;
+                font-size: 24px;
+                vertical-align: baseline;
+                margin-right: 10px; }
+            .container .con .main .boxes .fee .box .left, .container .con .main .boxes .qualification .box .left, .container .con .main .boxes .calendar .box .left, .container .con .main .boxes .apply .box .left {
+              float: left;
+              width: 500px; }
+        .container .con .main .boxes .fee .img {
+          float: right;
+          width: 400px;
+          height: 220px; }
+        .container .con .main .boxes .qualification .img {
+          float: right;
+          width: 400px;
+          height: 300px; }
+        .container .con .main .boxes .calendar .box table {
+          font-family: Roboto; }
+        .container .con .main .boxes .calendar .box th {
+          height: 60px;
+          color: #666;
+          font-size: 20px;
+          background: #aaa; }
+        .container .con .main .boxes .calendar .box td {
+          color: #666;
+          background: #fff;
+          font-size: 14px; }
+        .container .con .main .boxes .calendar .box h3 {
+          font-size: 26px;
+          margin-top: 30px; }
+        .container .con .main .boxes .calendar .box .camp1 h4 {
+          margin-bottom: 10px;
+          text-align: center; }
+        .container .con .main .boxes .calendar .box .camp1 table {
+          border-collapse: collapse;
+          margin: 10px auto 80px;
+          width: 1000px; }
+          .container .con .main .boxes .calendar .box .camp1 table tr td {
+            border: 1px solid #eee;
+            padding: 8px 12px; }
+          .container .con .main .boxes .calendar .box .camp1 table tr .td1 {
+            width: 160px; }
+          .container .con .main .boxes .calendar .box .camp1 table tr .td2 {
+            width: 60px; }
+        .container .con .main .boxes .calendar .box .camp2 table {
+          width: 1000px;
+          border-collapse: collapse;
+          margin: 10px auto 80px; }
+          .container .con .main .boxes .calendar .box .camp2 table tr td {
+            border: 1px solid #eee;
+            padding: 8px 12px; }
+          .container .con .main .boxes .calendar .box .camp2 table tr .td1 {
+            width: 120px; }
+          .container .con .main .boxes .calendar .box .camp2 table tr .td2 {
+            width: 60px; }
+          .container .con .main .boxes .calendar .box .camp2 table tr .td {
+            width: 260px; }
+          .container .con .main .boxes .calendar .box .camp2 table tr .td_border {
+            border-right: 1px solid #666; }
+        .container .con .main .boxes .calendar .schedule table {
+          border-collapse: collapse;
+          width: 1000px;
+          margin: 0 auto; }
+          .container .con .main .boxes .calendar .schedule table .th1 {
+            width: 26%; }
+          .container .con .main .boxes .calendar .schedule table td {
+            border: 1px solid #eee;
+            padding: 8px 12px; }
+          .container .con .main .boxes .calendar .schedule table .td1 {
+            width: 120px; }
+
+.choose {
+  background: #ccc !important;
+  color: #fff !important; }
+
+.footer {
+  height: 50px;
+  background: #fff;
+  color: #444444;
+  line-height: 50px;
+  text-align: center;
+  margin: 200px 0 30px;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  font-size: 13px; }
+
+.top {
+  background: url("../img/arrowup.png") 3px -5px no-repeat #aaa;
+  display: none;
+  position: fixed;
+  right: 80px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer; }
+
+.top:hover {
+  background: url("../img/arrowup.png") 3px -5px no-repeat #666; }
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    width: 960px; }
+
+  .container .con .banner .text {
+    width: 860px; }
+
+  .container .con .main .boxes .pro_length .box, .container .con .main .boxes .fee .box, .container .con .main .boxes .qualification .box, .container .con .main .boxes .calendar .box {
+    width: 900px; }
+
+  .container .con .main .boxes .calendar .box .camp1 table {
+    width: 900px; }
+
+  .container .con .main .boxes .calendar .box .camp2 table {
+    width: 900px; }
+
+  .container .con .main .boxes .calendar .box .schedule table {
+    width: 900px; }
+
+  .top {
+    right: 20px; }
+
+  .container .con .main .boxes .fee .box .img, .container .con .main .boxes .qualification .box .img, .container .con .main .boxes .calendar .box .img, .container .con .main .boxes .apply .box .img {
+    width: 400px; }
+
+  .container .con .main .boxes .fee .box .left, .container .con .main .boxes .qualification .box .left, .container .con .main .boxes .calendar .box .left, .container .con .main .boxes .apply .box .left {
+    width: 460px; } }
+@media screen and (max-width: 980px) {
+  .banner {
+    width: 980px; }
+
+  .nav, .footer {
+    width: 980px; }
+
+  .container .con .main {
+    width: 980px; } }
+.header .wrapper .logo {
+  overflow: hidden;
+  float: left; }
+
+.header .wrapper .logo .text {
+  height: 110px;
+  overflow: hidden; }
+
+.header .wrapper .top {
+  overflow: hidden;
+  float: left; }
+
+.header .wrapper .top_box {
+  height: 40px;
+  overflow: hidden; }
+
+.header .wrapper .top_box a {
+  line-height: 40px; }
+
+/*# sourceMappingURL=uce_camp.css.map */
